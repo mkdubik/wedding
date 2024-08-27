@@ -36,7 +36,7 @@ body {
           font-size: 50px; } }
 
 .ww-home-page:before {
-  content: "";
+/*  content: "";
   background-color: rgba(245, 138, 119, 0.2);
   width: 100%;
   height: 100%;
@@ -45,7 +45,7 @@ body {
   max-height: 1080px;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0; */}
 
 /* Nav Bar Style */
 .ww-nav-bar .heart {
@@ -122,9 +122,8 @@ body {
 
 /* RSVP Style */
 .ww-rsvp-detail {
-  background: url("../images/rsvp-img.jpg") no-repeat center center;
-  background-size: cover;
-  min-height: 500px;
+  /*background: url("../images/rsvp-img.jpg") no-repeat center center;*/
+/*  background-size: cover;
   position: relative; }
   .ww-rsvp-detail .ww-rsvp-form {
     padding-left: 20%; }
@@ -137,7 +136,7 @@ body {
     .ww-rsvp-detail .ww-rsvp-form .form-control {
       background-color: rgba(222, 222, 222, 0.2);
       color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.6); }
+      border: 1px solid rgba(255, 255, 255, 0.6);
     .ww-rsvp-detail .ww-rsvp-form .form-control::-moz-placeholder {
       color: #dedede; }
     .ww-rsvp-detail .ww-rsvp-form .form-control:-ms-input-placeholder {
@@ -150,16 +149,19 @@ body {
     .ww-rsvp-detail .ww-rsvp-form .btn-submit {
       background-color: rgba(245, 138, 119, 0.8);
       padding: 0.45rem 1.5rem;
-      border: 0; }
+      border: 0; */
+    }
 
 .ww-rsvp-detail:before {
-  content: "";
+/*  content: "";
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  */
+}
 
 /* Footer Style */
 .ww-footer a.credit {
@@ -170,13 +172,39 @@ body {
 
 /* Common Style */
 .ww-title {
-  font-family: "Great Vibes", cursive; }
+  font-family: "Great Vibes", cursive;
+}
 
 .ww-section {
-  padding: 100px 0; }
+  padding: 100px 0;
+  padding-bottom: 300px;
+}
 
 .btn-primary {
   color: #fff; }
 
 .btn-outline-primary:hover {
   color: #fff; }
+
+.my-3 {
+  padding-left: 50px;
+}
+
+#event-item-title {
+  font-family: "Great Vibes", cursive;
+
+}
+
+.my-4 {
+  padding-right: 10px;
+}
+
+.event-line {
+  margin-right: auto;
+  display: block;
+}
+
+.event-line-svg {
+  width: 100%;
+  height: 100%;
+}
