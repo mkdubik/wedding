@@ -20,7 +20,7 @@ body {
     .ww-home-page .ww-wedding-announcement .ww-announcement-container {
       max-width: 600px;
       text-align: center;
-      margin-left: 0;
+      margin-left: 0;1
       z-index: 999; }
     .ww-home-page .ww-wedding-announcement img {
       max-height: 350px;
@@ -120,49 +120,6 @@ body {
     -moz-column-count: 1;
          column-count: 1; } }
 
-/* RSVP Style */
-.ww-rsvp-detail {
-  /*background: url("../images/rsvp-img.jpg") no-repeat center center;*/
-/*  background-size: cover;
-  position: relative; }
-  .ww-rsvp-detail .ww-rsvp-form {
-    padding-left: 20%; }
-    @media (max-width: 768px) {
-      .ww-rsvp-detail .ww-rsvp-form {
-        padding-left: 10%; } }
-    @media (max-width: 576px) {
-      .ww-rsvp-detail .ww-rsvp-form {
-        padding-left: 0%; } }
-    .ww-rsvp-detail .ww-rsvp-form .form-control {
-      background-color: rgba(222, 222, 222, 0.2);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-    .ww-rsvp-detail .ww-rsvp-form .form-control::-moz-placeholder {
-      color: #dedede; }
-    .ww-rsvp-detail .ww-rsvp-form .form-control:-ms-input-placeholder {
-      color: #dedede; }
-    .ww-rsvp-detail .ww-rsvp-form .form-control::placeholder {
-      color: #dedede; }
-    .ww-rsvp-detail .ww-rsvp-form select.form-control option {
-      background: rgba(0, 0, 0, 0.3);
-      color: #fff; }
-    .ww-rsvp-detail .ww-rsvp-form .btn-submit {
-      background-color: rgba(245, 138, 119, 0.8);
-      padding: 0.45rem 1.5rem;
-      border: 0; */
-    }
-
-.ww-rsvp-detail:before {
-/*  content: "";
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  */
-}
-
 /* Footer Style */
 .ww-footer a.credit {
   color: inherit;
@@ -177,14 +134,8 @@ body {
 
 .ww-section {
   padding: 100px 0;
-  padding-bottom: 300px;
+  padding-bottom: 50px;
 }
-
-.btn-primary {
-  color: #fff; }
-
-.btn-outline-primary:hover {
-  color: #fff; }
 
 .my-3 {
   padding-left: 50px;
@@ -192,7 +143,6 @@ body {
 
 #event-item-title {
   font-family: "Great Vibes", cursive;
-
 }
 
 .my-4 {
@@ -207,4 +157,89 @@ body {
 .event-line-svg {
   width: 100%;
   height: 100%;
+}
+
+.event-item-picture {
+    width : 100%;
+    height: auto; /*to preserve the aspect ratio of the image*/
+}
+
+.rsvp-attendance {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  counter-reset: button;
+}
+
+.btn-check:active + .btn-outline-primary-input, .btn-check:checked + .btn-outline-primary-input, .btn-outline-primary-input.active, .btn-outline-primary-input:active  {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  box-shadow: none;
+}
+
+.btn-outline-primary-input {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.btn-outline-primary-input:hover {
+  color: black;
+  background-color: gray;
+  border-color: black;
+}
+
+.btn-group, .btn-outline-primary-send {
+  font-size: 15px;
+  padding: 8px;
+  margin: 20px auto 20px;
+  display: block;
+  width: 25%;
+}
+
+.btn-outline-primary-send {
+  color: black;
+  background-color: white;
+  border-color: black;
+  box-shadow: none;
+}
+
+.btn-outline-primary-send:hover {
+  color: #fff;
+  background-color: #666;
+  border-color: black;
+  box-shadow: none;
+}
+
+.btn-outline-primary-send:active {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  box-shadow: none;
+}
+
+.btn-outline-primary-send:enabled:focus {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-outline-primary-send:disabled {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  box-shadow: none;
+}
+
+
+.form input {
+  font-size: 15px;
+  color: #666;
+  padding: 6px;
+  margin: 25px auto 20px;
+  display: block;
+  width: 25%;
 }

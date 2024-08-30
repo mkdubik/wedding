@@ -94,3 +94,75 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
+
+window.addEventListener("load", function() {
+  const form = document.getElementById('rsvp-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const button = document.getElementById('rsvp-submit-button');
+    button.disabled = true;
+    button.innerText = 'Er að senda..'
+    const form = document.getElementById('rsvp-form');
+    const data = new FormData(form);
+
+    data.delete('btnradio')
+    const accept = document.getElementById('rsvp-accept-button').checked
+    data.append("Accept", accept)
+
+    const action = form.action;
+    fetch(action, {
+      method: 'POST',
+      body: new URLSearchParams(data),
+    })
+    .then(function (a) {
+        return a.json();
+    })
+    .then(function (json) {
+        console.log(json)
+        switch (json.code) {
+          case 400:
+            button.innerText = 'Vantar upplýsingar fyrir svar. Fylltu inn Nafn, Símanúmer, Tölvupóstfang, Heimilisfang, lag sem kemur þér á dansgólfið. Reyndu svo aftur.'
+            button.disabled = false;
+            return
+          case 409:
+            button.innerText = 'Nafn er nú þegar skráð. Hafðu samband við okkur ef það þarf að breyta skráninguni eða ef þú kannast ekki við skráninguna'
+            return
+          case 500:
+            button.innerText = 'Eitthvað hefur farið úrskeiðis. Hafðu samband við okkur svo að hægt sé að skrá þig'
+            return
+          default:
+            button.innerText = accept ? 'Svar skráð. Við hlökkum til að sjá þig á deginum okkar' : 'Svar skráð. Okkur þykir það leitt að þú kemst ekki'
+            return
+        }
+    })
+  });
+});
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 26, 2025 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown").innerHTML = days + " dagar " + hours + " klukkustundir "
+  + minutes + " mínútur " + seconds + " sekúndur til stefnu";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
