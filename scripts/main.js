@@ -121,7 +121,7 @@ window.addEventListener("load", function() {
         console.log(json)
         switch (json.code) {
           case 400:
-            button.innerText = 'Vantar upplýsingar fyrir svar. Fylltu inn Nafn, Símanúmer, Tölvupóstfang, Heimilisfang, lag sem kemur þér á dansgólfið. Reyndu svo aftur.'
+            button.innerText = 'Vantar upplýsingar fyrir svar. Fylltu inn Nafn, Símanúmer, Tölvupóstfang, Heimilisfang og lagið sem kemur þér á dansgólfið. Reyndu svo aftur.'
             button.disabled = false;
             return
           case 409:
@@ -158,11 +158,11 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
   document.getElementById("countdown").innerHTML = days + " dagar " + hours + " klukkustundir "
-  + minutes + " mínútur " + seconds + " sekúndur til stefnu";
+  + minutes + " mínútur " + seconds;
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+    document.getElementById("countdown").innerHTML = "Brúðkaupið okkar er búið";
   }
 }, 1000);

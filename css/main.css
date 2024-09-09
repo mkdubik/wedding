@@ -102,7 +102,7 @@ body {
   letter-spacing: 1px;
   border-radius: 3px; }
 
-.ww-photo-gallery .ww-gallery {
+.ww-photo-gallery .ww1-gallery {
   min-height: 500px; }
 
 .ww-photo-gallery .card-columns .card {
@@ -130,15 +130,26 @@ body {
 /* Common Style */
 .ww-title {
   font-family: "Great Vibes", cursive;
+  padding: 100px 0;
 }
 
 .ww-section {
-  padding: 100px 0;
-  padding-bottom: 50px;
+  padding: 150px 0;
 }
 
 .my-3 {
   padding-left: 50px;
+}
+
+.description {
+  padding: 100px;
+  padding-bottom: 0px;
+  font-family: "Great Vibes", cursive;
+}
+
+.description2 {
+  padding-bottom: 150px;
+  font-family: "Great Vibes", cursive;
 }
 
 #event-item-title {
@@ -234,6 +245,23 @@ body {
   box-shadow: none;
 }
 
+#countdown {
+  padding-top: 300px;
+}
+
+.rsvp-header {
+  padding: 50px;
+}
+
+iframe {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+    border-style:none;
+    padding: 50px;
+}
 
 .form input {
   font-size: 15px;
