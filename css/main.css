@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Dosis", sans-serif; }
+  font-family: "Dosis", sans-serif;
+}
 
 /* Home Page Style */
 .ww-home-page {
@@ -130,7 +135,7 @@ body {
 /* Common Style */
 .ww-title {
   font-family: "Great Vibes", cursive;
-  padding: 100px 0;
+  padding: 20px 0;
 }
 
 .ww-section {
@@ -253,14 +258,8 @@ body {
   padding: 50px;
 }
 
-iframe {
-    width: 600px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: #777;
-    display: block;
-    border-style:none;
-    padding: 50px;
+.gifts-details {
+  display: none;
 }
 
 .form input {
@@ -270,4 +269,27 @@ iframe {
   margin: 25px auto 20px;
   display: block;
   width: 25%;
+}
+
+.lang-button {
+  color: black;
+  border-style: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.lang-button:hover {
+  color: black;
+  border-style: none;
+  outline: none;
+  box-shadow: none;
+  background-color: gray;
+}
+
+.lang-button:enabled:focus {
+  color: black;
+  text-decoration: underline;
+  border-style: none;
+  outline: none;
+  box-shadow: none;
 }

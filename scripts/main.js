@@ -158,7 +158,7 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
   document.getElementById("countdown").innerHTML = days + " dagar " + hours + " klukkustundir "
-  + minutes + " mínútur " + seconds;
+  + minutes + " mínútur " + seconds + "sekúndur";
 
   // If the count down is finished, write some text
   if (distance < 0) {
