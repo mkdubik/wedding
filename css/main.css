@@ -157,7 +157,7 @@ body {
   font-family: "Great Vibes", cursive;
 }
 
-#event-item-title {
+.font {
   font-family: "Great Vibes", cursive;
 }
 
@@ -283,7 +283,7 @@ body {
   border-style: none;
   outline: none;
   box-shadow: none;
-  background-color: gray;
+  background-color: #f8f9fa;
 }
 
 .lang-button:enabled:focus {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
     <title>I & M 2025</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&amp;display=swap"/>
@@ -40,12 +41,15 @@
     <script src="scripts/aos.js?ver=1.1.0"></script>
     <script src="scripts/ekko-lightbox.min.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+    <script src="scripts/i18n.js"></script>
+    <script src="scripts/countdowntimer.js"></script>
+    <script src="scripts/submit.js"></script>
     <header></header>
     <div class="ww-home-page" id="home">
       <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
         <div class="container ww-announcement-container">
           <p class="ww-couple-name ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">Ingunn & Mikael</p><img class="img-fluid mt-1" src="images/laurel-1.png" alt="Heart" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000"/>
-          <p class="h2 mt-5 ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">26<sup></sup> Júlí, 2025</p>
+          <p class="h2 mt-5 ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">26 - 07 - 2025</p>
         </div>
       </div>
     </div>
@@ -53,26 +57,25 @@
       <div class="container">
         <div class="row text-center">
           <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
-            <button type="button" class="btn btn-outline-primary lang-button">Íslenska</button>
+            <button id="is" type="button" class="btn btn-outline-primary lang-button">Íslenska</button>
           </div>
           <div class="col">
-            <button type="button" class="btn btn-outline-primary lang-button">English</button>
+            <button id="en" type="button" class="btn btn-outline-primary lang-button">English</button>
           </div>
           <div class="col">
-            <button type="button" class="btn btn-outline-primary lang-button">Polski</button>
+            <button id="pl" type="button" class="btn btn-outline-primary lang-button">Polski</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="ww-section bg-light" id="events">
-        <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Dagskrá</h2>
-        <div class="description h2 text-center">Athöfnin verður í <a href="https://www.google.com/maps?ll=64.125268,-20.524612&z=15&t=h&hl=en&gl=IS&mapclient=embed&cid=2354147562176909985" target="_blank">Skálholtskirkju</a></div>
-        <div class="description2 h2 text-center">Við munum skála í <a href="https://maps.app.goo.gl/qfYUDDLa7vxXxydf7" target="_blank">Eyvindartungu</a></div>
+    <div class="ww-section bg-light">
+        <h2 id="schedule" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
+        <div id="ceremony" class="description h2 text-center translate"></div>
+        <div id="dinner" class="description2 h2 text-center translate"></div>
         <div class="container ww-wedding-event-rows">
           <div class="row">
             <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
-              <div id="event-item-title" class="h3 text-center">Athöfn - 15:00 - Skálholtskirkja</div>
-              <div id="event-item-title" class="h4 text-center"></div>
+              <div id="ceremony-events" class="h3 text-center translate font"></div>
               <img class="event-item-picture" src="images/athofn.jpg">
             </div>
             <div class="col-1">
@@ -95,7 +98,7 @@
             </div>
             <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
               <div>
-                <div id="event-item-title" class="h3 text-center">Fordrykkur - 17:00 - Eyvindartunga</div>
+                <div id="predrinks-events" class="h3 text-center translate font"></div>
                 <img class="event-item-picture" src="images/fordrykkur.jpg">
               </div>
             </div>
@@ -103,7 +106,7 @@
           <div class="row">
             <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
               <div>
-                <div id="event-item-title" class="h3 text-center">Matur - 18:30 - Eyvindartunga</div>
+                <div id="dinner-events" class="h3 text-center translate font"></div>
                 <img class="event-item-picture" src="images/matur.jpg">
               </div>
             </div>
@@ -127,7 +130,7 @@
             </div>
             <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
               <div>
-                <div id="event-item-title" class="h3 text-center">Kaka - 21:00 - Eyvindartunga</div>
+                <div id="cake-events" class="h3 text-center font translate"></div>
                 <img class="event-item-picture" src="images/kaka.jpg">
               </div>
             </div>
@@ -135,7 +138,7 @@
           <div class="row">
             <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
               <div>
-                <div id="event-item-title" class="h3 text-center">Dansiball - 22:30 - Eyvindartunga</div>
+                <div id="dance-events" class="h3 text-center font translate"></div>
                 <img class="event-item-picture" src="images/dansiball.jpg">
               </div>
             </div>
@@ -155,31 +158,31 @@
         <h2 class="h1 text-center pb-3 ww-title rsvp-header" data-aos="zoom-in-down" data-aos-duration="1000">RSVP</h2>
         <div class="form">
           <form id="rsvp-form" class ="info" method="POST" action="https://script.google.com/macros/s/AKfycbx9Rdi2a8Di7q9MZxUghjig03NKVFwfThjPkAlwJwDwp8pVlxyHhUSu-A3GO2_CeZ2j/exec">
-            <input name="Name" type="text" placeholder="Nafn" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Phone" type="text" placeholder="Símanúmer" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Email" type="text" placeholder="Tölvupóstfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Address" type="text" placeholder="Heimilisfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Food" type="text" placeholder="Ofnæmisvaldar / Mataræði">
-            <input name="Music" type="text" placeholder="Hvaða lag kemur þér á dansgólfið?" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <input name="Name" class="translate" type="text" placeholder="Nafn" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <input name="Phone" class="translate" type="text" placeholder="Símanúmer" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <input name="Email" class="translate" type="text" placeholder="Tölvupóstfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <input name="Address" class="translate" type="text" placeholder="Heimilisfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <input name="Food" class="translate" type="text" placeholder="Ofnæmisvaldar / Mataræði">
+            <input name="Music" class="translate" type="text" placeholder="Hvaða lag kemur þér á dansgólfið?" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
 
             <div class="btn-group" role="group">
               <input id="rsvp-accept-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-              <label class="btn btn-outline-primary btn-outline-primary-input" for="rsvp-accept-button">Já ég mæti</label>
+              <label id="accept-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-accept-button"></label>
 
               <input id="rsvp-decline-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-              <label class="btn btn-outline-primary btn-outline-primary-input" for="rsvp-decline-button">Því miður, ég get ekki mætt</label>
+              <label id="decline-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-decline-button"></label>
             </div>
 
-            <button id="rsvp-submit-button" type="submit" class="btn btn-outline-primary btn-outline-primary-send">Senda svar</button>
+            <button id="rsvp-submit-button" type="submit" class="btn btn-outline-primary btn-outline-primary-send translate"></button>
           </form>
         </div>
       </div>
     </div>
     <div class="ww-section bg-light" id="extra-details">
       <div class="container ww-extra-details">
-        <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Auka upplýsingar</h2>
-        <div class="description h3 text-center">Ef veður leyfir er hægt að tjalda á tjaldsvæði Eyvindartungu fyrir þá sem hafa áhuga á því</div>
-        <div class="description h3 text-center">Einnig er hægt að bóka herbergi í gegnum bókunarsíður</div>
+        <h2 id="extra-details-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
+        <div id="extra-details-1" class="description h3 text-center translate"></div>
+        <div id="extra-details-2" class="description h3 text-center translate"></div>
 
         <div class="row">
           <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
@@ -196,10 +199,10 @@
     </div>
     <div class="ww-section bg-light" id="gifts-details">
       <div class="container ww-extra-details">
-        <h2 class="h1 text-center pb-3 ww-title" data-aos="zoom-in-down" data-aos-duration="1000">Gjafir</h2>
-        <div class="description h3 text-center">Við þökkum fyrir áhugan á að gefa okkur brúðkaupsgjöf</div>
-        <div class="description h3 text-center">Það sem væri hentugast fyrir okkur væri að fá gjöf í formi styrks</div>
-        <div class="description h3 text-center">Leggið vinsamlegast á Kennitölu: 010190-2159 og bankanúmer 0306-26-135864</div>
+        <h2 id="gifts-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
+        <div id="gifts-details-1" class="description h3 text-center translate"></div>
+        <div id="gifts-details-2" class="description h3 text-center translate"></div>
+        <div id="gifts-details-3" class="description h3 text-center translate"></div>
       </div>
     </div>
     </body>
