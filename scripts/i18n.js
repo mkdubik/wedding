@@ -32,13 +32,14 @@ const i18n = {
         "accept-button": "Já ég mæti",
         "decline-button": "Því miður, ég get ekki mætt",
         "rsvp-submit-button": "Senda svar",
-        "extra-details-head": "Auka upplýsingar",
-        "extra-details-1": "Ef veður leyfir er hægt að tjalda á tjaldsvæði Eyvindartungu fyrir þá sem hafa áhuga á því",
-        "extra-details-2": "Einnig er hægt að bóka herbergi í gegnum bókunarsíður",
+        "details-head": "Upplýsingar",
+        "details-1": "Ef veður leyfir er hægt að tjalda á tjaldsvæði Eyvindartungu fyrir þá sem hafa áhuga á því",
+        "details-2": "Einnig er hægt að bóka herbergi í gegnum bókunarsíður",
         "gifts-head": "Gjafir",
         "gifts-details-1": "Við þökkum fyrir áhugan á að gefa okkur brúðkaupsgjöf",
         "gifts-details-2": "Það sem væri hentugast fyrir okkur væri að fá gjöf í formi styrks",
-        "gifts-details-3": "Leggið vinsamlegast á Kennitölu: 010190-2159 og bankanúmer 0306-26-135864"
+        "gifts-details-3": "Leggið vinsamlegast á Kennitölu: 010190-2159 og bankanúmer 0306-26-135864",
+        "gallery-head": "Myndir"
     },
 	"en": {
     	"schedule": "Schedule",
@@ -73,13 +74,14 @@ const i18n = {
         "accept-button": "See you there!",
         "decline-button": "I cannot attend",
         "rsvp-submit-button": "Submit",
-        "extra-details-head": "Details",
-        "extra-details-1": "If weather permits <todo>",
-        "extra-details-2": "ALSO its possible <todo>",
+        "details-head": "Details",
+        "details-1": "If weather permits <todo>",
+        "details-2": "ALSO its possible <todo>",
         "gifts-head": "Gifts",
         "gifts-details-1": "gifts-details-1 <todo>",
         "gifts-details-2": "gifts-details-2 <todo>",
-        "gifts-details-3": "gifts-details-3 <todo>"
+        "gifts-details-3": "gifts-details-3 <todo>",
+        "gallery-head": "Gallery"
     },
 	"pl": {
     	"schedule": "Rozkład",
@@ -114,13 +116,14 @@ const i18n = {
         "accept-button": "Tak",
         "decline-button": "Niestety",
         "rsvp-submit-button": "Wyslac",
-        "extra-details-head": "Dodatkowe informacje",
-        "extra-details-1": "Jezeli pogoda <todo>",
-        "extra-details-2": "Wyszukiwarka <todo>",
+        "details-head": "Dodatkowe informacje",
+        "details-1": "Jezeli pogoda <todo>",
+        "details-2": "Wyszukiwarka <todo>",
         "gifts-head": "Prezenty",
         "gifts-details-1": "prezenty 1",
         "gifts-details-2": "prezenty 2",
-        "gifts-details-3": "prezenty 3"
+        "gifts-details-3": "prezenty 3",
+        "gallery-head": "Zdjecia"
     },
 };
 
@@ -128,22 +131,32 @@ var currentLanguage = "is"
 
 document.addEventListener("DOMContentLoaded", function() {
     const isButton = document.getElementById("is")
+    const enButton = document.getElementById("en")
+    const plButton = document.getElementById("pl")
+
     isButton.addEventListener("click", function() {
         if (currentLanguage != "is") {
+            isButton.innerHTML = "<u>Íslenska</u>"
+            enButton.innerHTML = "English"
+            plButton.innerHTML = "Polski"
             translatePage("is")
         }
     });
 
-    const enButton = document.getElementById("en")
     enButton.addEventListener("click", function() {
         if (currentLanguage != "en") {
+            isButton.innerHTML = "Íslenska"
+            enButton.innerHTML = "<u>English</u>"
+            plButton.innerHTML = "Polski"
             translatePage("en")
         }
     });
 
-    const plButton = document.getElementById("pl")
     plButton.addEventListener("click", function() {
         if (currentLanguage != "pl") {
+            isButton.innerHTML = "Íslenska"
+            enButton.innerHTML = "English"
+            plButton.innerHTML = "<u>Polski</u>"
             translatePage("pl")
         }
     });
@@ -153,21 +166,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
     switch (lang) {
         case "en":
+            isButton.innerHTML = "Íslenska"
+            enButton.innerHTML = "<u>English</u>"
+            plButton.innerHTML = "Polski"
             currentLanguage = "en"
-            enButton.focus()
             break;
         case "pl":
+            isButton.innerHTML = "Íslenska"
+            enButton.innerHTML = "English"
+            plButton.innerHTML = "<u>Polski</u>"
             currentLanguage = "pl"
-            plButton.focus()
             break;
         default:
+            isButton.innerHTML = "<u>Íslenska</u>"
+            enButton.innerHTML = "English"
+            plButton.innerHTML = "Polski"
             currentLanguage = "is"
-            isButton.focus()
             break
     }
 
 
     translatePage(currentLanguage)
+
+    /*
+     *  Uncomment this until we get closer to the wedding
+        document.getElementById("gifts-section").remove()
+        document.getElementById("gifts-head").parentNode.remove()
+    */
 });
 
 function translatePage(language) {

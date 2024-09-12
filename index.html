@@ -2,7 +2,6 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
     <title>I & M 2025</title>
@@ -21,11 +20,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link href="css/bootstrap5.css" rel="stylesheet">
-    <link href="css/font-awesome/css/all.min.css?ver=1.1.0" rel="stylesheet">
-    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
-    <link href="css/ekko-lightbox.css?ver=1.1.0" rel="stylesheet">
-    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/libs/bootstrap.min.css" rel="stylesheet">
+    <link href="css/libs/font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="css/libs/aos.css" rel="stylesheet">
+    <link href="css/libs/ekko-lightbox.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/schedule.css" rel="stylesheet">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -36,124 +36,122 @@
     </noscript>
   </head>
   <body id="top">
-    <script src="scripts/jquery.min.js?ver=1.1.0"></script>
-    <script src="scripts/bootstrap.bundle.min.js?ver=1.1.0"></script>
-    <script src="scripts/aos.js?ver=1.1.0"></script>
-    <script src="scripts/ekko-lightbox.min.js?ver=1.1.0"></script>
-    <script src="scripts/main.js?ver=1.1.0"></script>
-    <script src="scripts/i18n.js"></script>
-    <script src="scripts/countdowntimer.js"></script>
-    <script src="scripts/submit.js"></script>
-    <header></header>
-    <div class="ww-home-page" id="home">
+    <div class="ww-home-page" id="home-section">
       <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
         <div class="container ww-announcement-container">
-          <p class="ww-couple-name ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">Ingunn & Mikael</p><img class="img-fluid mt-1" src="images/laurel-1.png" alt="Heart" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000"/>
+          <p class="ww-couple-name ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">Ingunn & Mikael</p><img class="img-fluid mt-1" src="images/laurel-1.png" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000"/>
           <p class="h2 mt-5 ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">26 - 07 - 2025</p>
         </div>
       </div>
     </div>
-    <div class="ww-section bg-light">
-      <div class="container">
-        <div class="row text-center">
+    <div class="ww-nav-bar sticky-top bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <h1 class="h2"><a class="pl-4 navbar-brand" href="#">Ingunn & Mikael 2025</a></h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ww-navbarNav" aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse text-uppercase" id="ww-navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a id="schedule" class="nav-link smooth-scroll translate" href="#schedule-section"></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#rsvp-section">RSVP</a></li>
+              <li class="nav-item"><a id="details-head" class="nav-link smooth-scroll translate" href="#details-section"></a></li>
+              <li class="nav-item"><a id="gifts-head" class="nav-link smooth-scroll translate" href="#gifts-section"></a></li>
+              <li class="nav-item"><a id="gallery-head" class="nav-link smooth-scroll translate" href="#gallery-section"></a></li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse" id="ww-navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><button id="is" type="button" class="btn btn-outline-primary lang-button">Íslenska</button></li>
+              <li class="nav-item"><button id="en" type="button" class="btn btn-outline-primary lang-button">English</button></li>
+              <li class="nav-item"><button id="pl" type="button" class="btn btn-outline-primary lang-button">Polski</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="schedule-section" class="ww-section bg-light">
+      <h2 id="schedule" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
+      <div class="container schedule-rows">
+        <div class="row">
           <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
-            <button id="is" type="button" class="btn btn-outline-primary lang-button">Íslenska</button>
+            <div id="ceremony-events" class="h3 text-center translate font"></div>
+            <img class="schedule-item-picture" src="images/athofn.jpg">
+          </div>
+          <div class="col-1">
+            <svg class="event-line-svg">
+              <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
+              <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" />
+            </svg>
           </div>
           <div class="col">
-            <button id="en" type="button" class="btn btn-outline-primary lang-button">English</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-1">
+            <svg class="event-line-svg">
+              <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
+              <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" />
+            </svg>
+          </div>
+          <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
+            <div>
+              <div id="predrinks-events" class="h3 text-center translate font"></div>
+              <img class="schedule-item-picture" src="images/fordrykkur.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
+            <div>
+              <div id="dinner-events" class="h3 text-center translate font"></div>
+              <img class="schedule-item-picture" src="images/matur.jpg">
+            </div>
+          </div>
+          <div class="col-1">
+            <svg class="event-line-svg">
+              <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
+              <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" />
+            </svg>
           </div>
           <div class="col">
-            <button id="pl" type="button" class="btn btn-outline-primary lang-button">Polski</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-1">
+            <svg class="event-line-svg">
+              <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
+              <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" />
+            </svg>
+          </div>
+          <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
+            <div>
+              <div id="cake-events" class="h3 text-center font translate"></div>
+              <img class="schedule-item-picture" src="images/kaka.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
+            <div>
+              <div id="dance-events" class="h3 text-center font translate"></div>
+              <img class="schedule-item-picture" src="images/dansiball.jpg">
+            </div>
+          </div>
+          <div class="col-1">
+              <svg class="event-line-svg">
+                <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
+              </svg>
+          </div>
+          <div class="col">
           </div>
         </div>
       </div>
+      <h2 id="countdown" class="h1 text-center ww-title pb-3" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
     </div>
-    <div class="ww-section bg-light">
-        <h2 id="schedule" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
-        <div id="ceremony" class="description h2 text-center translate"></div>
-        <div id="dinner" class="description2 h2 text-center translate"></div>
-        <div class="container ww-wedding-event-rows">
-          <div class="row">
-            <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
-              <div id="ceremony-events" class="h3 text-center translate font"></div>
-              <img class="event-item-picture" src="images/athofn.jpg">
-            </div>
-            <div class="col-1">
-              <svg class="event-line-svg">
-                <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
-                <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" />
-              </svg>
-            </div>
-            <div class="col">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-            </div>
-            <div class="col-1">
-              <svg class="event-line-svg">
-                <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
-                <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" />
-              </svg>
-            </div>
-            <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
-              <div>
-                <div id="predrinks-events" class="h3 text-center translate font"></div>
-                <img class="event-item-picture" src="images/fordrykkur.jpg">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
-              <div>
-                <div id="dinner-events" class="h3 text-center translate font"></div>
-                <img class="event-item-picture" src="images/matur.jpg">
-              </div>
-            </div>
-            <div class="col-1">
-              <svg class="event-line-svg">
-                <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
-                <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" />
-              </svg>
-            </div>
-            <div class="col">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-            </div>
-            <div class="col-1">
-              <svg class="event-line-svg">
-                <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
-                <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" />
-              </svg>
-            </div>
-            <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
-              <div>
-                <div id="cake-events" class="h3 text-center font translate"></div>
-                <img class="event-item-picture" src="images/kaka.jpg">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
-              <div>
-                <div id="dance-events" class="h3 text-center font translate"></div>
-                <img class="event-item-picture" src="images/dansiball.jpg">
-              </div>
-            </div>
-            <div class="col-1">
-                <svg class="event-line-svg">
-                  <circle cx="50%" cy="5" r="3" stroke="black" stroke-width="4" fill="black" />
-                </svg>
-            </div>
-            <div class="col">
-            </div>
-          </div>
-        </div>
-        <h2 id="countdown" class="h1 text-center ww-title pb-3" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
-    </div>
-    <div class="ww-section bg-light" id="rsvp">
+    <div class="ww-section bg-light" id="rsvp-section">
       <div class="container ww-rsvp-detail">
         <h2 class="h1 text-center pb-3 ww-title rsvp-header" data-aos="zoom-in-down" data-aos-duration="1000">RSVP</h2>
         <div class="form">
@@ -178,11 +176,11 @@
         </div>
       </div>
     </div>
-    <div class="ww-section bg-light" id="extra-details">
+    <div class="ww-section bg-light" id="details-section">
       <div class="container ww-extra-details">
-        <h2 id="extra-details-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
-        <div id="extra-details-1" class="description h3 text-center translate"></div>
-        <div id="extra-details-2" class="description h3 text-center translate"></div>
+        <h2 id="details-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
+        <div id="details-1" class="description h3 text-center translate font"></div>
+        <div id="details-2" class="description h3 text-center translate font"></div>
 
         <div class="row">
           <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
@@ -197,13 +195,34 @@
         </div>
       </div>
     </div>
-    <div class="ww-section bg-light" id="gifts-details">
+    <div class="ww-section bg-light" id="gifts-section">
       <div class="container ww-extra-details">
         <h2 id="gifts-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
-        <div id="gifts-details-1" class="description h3 text-center translate"></div>
-        <div id="gifts-details-2" class="description h3 text-center translate"></div>
-        <div id="gifts-details-3" class="description h3 text-center translate"></div>
+        <div id="gifts-details-1" class="description h3 text-center translate font"></div>
+        <div id="gifts-details-2" class="description h3 text-center translate font"></div>
+        <div id="gifts-details-3" class="description h3 text-center translate font"></div>
       </div>
     </div>
-    </body>
+    <div class="ww-section bg-light" id="gallery-section">
+      <div class="ww-photo-gallery">
+        <div class="container">
+          <h2 id="gallery-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000">Gallery</h2>
+          <div class="ww-gallery" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="0">
+            <div class="card-columns">
+              <div class="card"><a href="images/gallery/1.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery/1.jpg" alt="Gallery Pic 1"/></a></div>
+              <div class="card"><a href="images/gallery/2.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery/2.jpg" alt="Gallery Pic 2"/></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/libs/jquery.min.js"></script>
+  <script src="scripts/libs/bootstrap.bundle.min.js"></script>
+  <script src="scripts/libs/aos.js"></script>
+  <script src="scripts/libs/index.bundle.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/i18n.js"></script>
+  <script src="scripts/countdowntimer.js"></script>
+  <script src="scripts/submit.js"></script>
 </html>

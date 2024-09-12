@@ -1,0 +1,14 @@
+.schedule-rows {
+    padding-top: 150px;
+}
+
+.schedule-item-picture {
+    width : 100%;
+    height: auto; /*to preserve the aspect ratio of the image*/
+}
+
+
+.schedule-vertical-separator {
+  margin-right: auto;
+  display: block;
+}

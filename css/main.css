@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Dosis", sans-serif;
 }
@@ -41,7 +37,7 @@ body {
           font-size: 50px; } }
 
 .ww-home-page:before {
-/*  content: "";
+  content: "";
   background-color: rgba(245, 138, 119, 0.2);
   width: 100%;
   height: 100%;
@@ -50,53 +46,12 @@ body {
   max-height: 1080px;
   position: absolute;
   left: 0;
-  top: 0; */}
-
-/* Nav Bar Style */
-.ww-nav-bar .heart {
-  fill: #f26147;
-  position: relative;
-  top: 2px;
-  width: 40px;
-  -webkit-animation: pulse 1s ease infinite;
-          animation: pulse 1s ease infinite; }
-
-@-webkit-keyframes pulse {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.3); }
-  100% {
-    transform: scale(1); } }
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.3); }
-  100% {
-    transform: scale(1); } }
+  top: 0; }
 
 .ww-nav-bar .nav-item {
   font-size: 18px;
   padding: 5px 0 5px 16px;
   font-weight: 500; }
-
-/* Wedding Event Style */
-.ww-wedding-event ul {
-  list-style: none;
-  padding-left: 0; }
-
-/* Couple Friends Style  */
-.ww-couple-friends .carousel {
-  padding: 40px 0; }
-
-.ww-couple-friends .carousel-indicators {
-  bottom: 0px; }
-  .ww-couple-friends .carousel-indicators li {
-    background-color: #6c757d; }
-  .ww-couple-friends .carousel-indicators .active {
-    background-color: #f58a77; }
 
 /* Photo Gallery Style */
 .ww-photo-gallery .ww-category-filter a {
@@ -105,15 +60,18 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 .ww-photo-gallery .ww1-gallery {
-  min-height: 500px; }
+  min-height: 500px;
+}
 
 .ww-photo-gallery .card-columns .card {
   border: none;
   margin-bottom: 15px;
-  border-radius: none; }
+  border-radius: none;
+}
 
 @media (max-width: 992px) {
   .ww-photo-gallery .card-columns {
@@ -125,13 +83,6 @@ body {
     -moz-column-count: 1;
          column-count: 1; } }
 
-/* Footer Style */
-.ww-footer a.credit {
-  color: inherit;
-  border-bottom: 1px dashed;
-  text-decoration: none;
-  cursor: pointer; }
-
 /* Common Style */
 .ww-title {
   font-family: "Great Vibes", cursive;
@@ -139,45 +90,20 @@ body {
 }
 
 .ww-section {
-  padding: 150px 0;
+  padding: 10rem 0;
 }
 
-.my-3 {
-  padding-left: 50px;
+#schedule-section {
+  padding: 5rem 0;
 }
 
-.description {
-  padding: 100px;
-  padding-bottom: 0px;
-  font-family: "Great Vibes", cursive;
-}
-
-.description2 {
-  padding-bottom: 150px;
-  font-family: "Great Vibes", cursive;
-}
-
-.font {
-  font-family: "Great Vibes", cursive;
-}
-
-.my-4 {
-  padding-right: 10px;
-}
-
-.event-line {
-  margin-right: auto;
-  display: block;
+#countdown {
+  padding: 10rem 0;
 }
 
 .event-line-svg {
   width: 100%;
   height: 100%;
-}
-
-.event-item-picture {
-    width : 100%;
-    height: auto; /*to preserve the aspect ratio of the image*/
 }
 
 .rsvp-attendance {
@@ -250,14 +176,6 @@ body {
   box-shadow: none;
 }
 
-#countdown {
-  padding-top: 300px;
-}
-
-.rsvp-header {
-  padding: 50px;
-}
-
 .gifts-details {
   display: none;
 }
@@ -278,7 +196,7 @@ body {
   box-shadow: none;
 }
 
-.lang-button:hover {
+.lang-button:hover, .lang-button:active:hover {
   color: black;
   border-style: none;
   outline: none;
@@ -293,3 +211,5 @@ body {
   outline: none;
   box-shadow: none;
 }
+
+
