@@ -1,52 +1,104 @@
+@font-face {
+  font-family: "Marmelad-Regular";
+  src: url('fonts/Marmelad-Regular.ttf') format('truetype');
+}
+
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Marmelad-Regular", sans-serif;
 }
 
 /* Home Page Style */
 .ww-home-page {
-  background: url("../images/home-img.jpg") no-repeat center center;
-  background-size: cover;
-  background-position: 70%;
-  height: 100vh;
-  min-height: 480px;
-  max-height: 1080px; }
-  .ww-home-page .ww-wedding-announcement {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    height: 100%;
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    letter-spacing: 2px; }
-    .ww-home-page .ww-wedding-announcement .ww-announcement-container {
-      max-width: 600px;
-      text-align: center;
-      margin-left: 0;1
-      z-index: 999; }
-    .ww-home-page .ww-wedding-announcement img {
-      max-height: 350px;
-      width: auto; }
-      @media (max-width: 480px) {
-        .ww-home-page .ww-wedding-announcement img {
-          max-height: 250px;
-          width: auto; } }
-    .ww-home-page .ww-wedding-announcement .ww-couple-name {
-      font-size: 70px; }
-      @media (max-width: 576px) {
-        .ww-home-page .ww-wedding-announcement .ww-couple-name {
-          font-size: 50px; } }
+  padding: 5% 0%;
+}
 
+.couple-image {
+  min-width: 260px;
+  max-width: 760px;
+  padding-left: 40px;
+}
+
+.ww-wedding-announcement-text {
+  padding-top: 5%;
+  text-align: center;
+  padding-right: 50px;
+}
+
+.wedding-announcement-text-couple {
+  font-family: "Great Vibes", cursive;
+  font-size: 4vw;
+}
+
+.wedding-announcement-text-location, .wedding-announcement-text-date {
+  font-family: "Marmelad-Regular";
+  font-size: 2vw;
+}
+
+@media (max-width: 962px) {
+  .ww-wedding-announcement-text {
+    order: 2;
+    font-size: 5;
+    padding-top: 10%;
+  }
+  .wedding-announcement-text-couple {
+    font-size: 40px;
+  }
+  .wedding-announcement-text-location, .wedding-announcement-text-date {
+    font-family: "Marmelad-Regular";
+    font-size: 20px;
+  }
+  .couple-image {
+    padding-left: 0px;
+  }
+}
+
+.ww-announcement-container {
+  max-width: 1500px;
+}
+
+/*
+.ww-home-page .ww-wedding-announcement {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+  color: black;
+  letter-spacing: 2px;
+}
+*/
+/*.ww-home-page .ww-wedding-announcement .ww-announcement-container {
+  max-width: 600px;
+  text-align: center;
+  margin-left: 0;
+  padding-bottom: 200px;
+  z-index: 999; }
+.ww-home-page .ww-wedding-announcement img {
+  max-height: 350px;
+  width: auto; }
+  @media (max-width: 480px) {
+    .ww-home-page .ww-wedding-announcement img {
+      max-height: 250px;
+      width: auto; } }
+.ww-home-page .ww-wedding-announcement .ww-couple-name {
+  font-size: 70px; }
+  @media (max-width: 576px) {
+    .ww-home-page .ww-wedding-announcement .ww-couple-name {
+      font-size: 50px; } }*/
+
+/*
 .ww-home-page:before {
-  content: "";
-  background-color: rgba(245, 138, 119, 0.2);
   width: 100%;
   height: 100%;
   height: 100vh;
   min-height: 480px;
   max-height: 1080px;
-  position: absolute;
+  position: static;
   left: 0;
-  top: 0; }
+  top: 0;
+}
+*/
+/*.ww-wedding-announcement{
+}*/
 
 .ww-nav-bar .nav-item {
   font-size: 18px;
@@ -83,11 +135,6 @@ body {
     -moz-column-count: 1;
          column-count: 1; } }
 
-/* Common Style */
-.ww-title {
-  font-family: "Great Vibes", cursive;
-  padding: 20px 0;
-}
 
 .ww-section {
   padding: 10rem 0;
@@ -176,10 +223,6 @@ body {
   box-shadow: none;
 }
 
-.gifts-details {
-  display: none;
-}
-
 .form input {
   font-size: 15px;
   color: #666;
@@ -211,5 +254,19 @@ body {
   outline: none;
   box-shadow: none;
 }
+
+/* Hide elements */
+
+#gifts-section {
+  display: none;
+  visibility: hidden;
+}
+
+.gifts-details {
+  display: none;
+}
+
+
+
 
 

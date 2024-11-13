@@ -36,14 +36,6 @@
     </noscript>
   </head>
   <body id="top">
-    <div class="ww-home-page" id="home-section">
-      <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
-        <div class="container ww-announcement-container">
-          <p class="ww-couple-name ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">Ingunn & Mikael</p><img class="img-fluid mt-1" src="images/laurel-1.png" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000"/>
-          <p class="h2 mt-5 ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">26 - 07 - 2025</p>
-        </div>
-      </div>
-    </div>
     <div class="ww-nav-bar sticky-top bg-light">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -51,10 +43,10 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ww-navbarNav" aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse text-uppercase" id="ww-navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a id="schedule" class="nav-link smooth-scroll translate" href="#schedule-section"></a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#rsvp-section">RSVP</a></li>
+              <li class="nav-item"><a id="schedule" class="nav-link smooth-scroll translate" href="#schedule-section"></a></li>
               <li class="nav-item"><a id="details-head" class="nav-link smooth-scroll translate" href="#details-section"></a></li>
-              <li class="nav-item"><a id="gifts-head" class="nav-link smooth-scroll translate" href="#gifts-section"></a></li>
+             <!-- <li class="nav-item"><a id="gifts-head" class="nav-link smooth-scroll translate" href="#gifts-section"></a></li> -->
               <li class="nav-item"><a id="gallery-head" class="nav-link smooth-scroll translate" href="#gallery-section"></a></li>
             </ul>
           </div>
@@ -67,6 +59,49 @@
           </div>
         </div>
       </nav>
+    </div>
+    <div class="ww-home-page bg-light" id="home-section">
+      <div class="ww-wedding-announcement">
+        <div class="container ww-announcement-container">
+          <div class="row">
+            <div class="col ww-wedding-announcement-text">
+              <p class="wedding-announcement-text-couple">Ingunn & Mikael</p>
+              <p id="wedding-announcement-text-date" class="wedding-announcement-text-date translate">2026</p>
+              <p class="wedding-announcement-text-location">Laugarvatn</p>
+            </div>
+            <div class="col d-flex">
+              <img class="couple-image" src="images/home-img.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ww-section bg-light" id="rsvp-section">
+      <div class="container ww-rsvp-detail">
+        <p id="intro-text" class="h5 text-left translate"></p>
+        <p id="intro-text-2" class="h5 text-left">Við hlökkum til að fagna deginum okkar með ykkur í sveitabrúðkaupi! Á þessari síðu munum við deila ýmsum hagnýtum upplýsingum, m.a. dagskrá dagsins og upplýsingar um mögulega gistingu á svæðinu.</p>
+        <p id="intro-text-2" class="h5 text-left">Við biðjum ykkur vinsamlegast um að fylla út RSVP-formið hér að neðan við fyrsta tækifæri til að auðvelda okkur alla skipulagningu.</p>
+        <div class="form">
+          <form id="rsvp-form" class ="info" method="POST" action="https://script.google.com/macros/s/AKfycbx9Rdi2a8Di7q9MZxUghjig03NKVFwfThjPkAlwJwDwp8pVlxyHhUSu-A3GO2_CeZ2j/exec">
+            <input name="Name" class="translate" type="text" placeholder="Nafn" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <input name="Phone" class="translate" type="text" placeholder="Símanúmer" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <input name="Email" class="translate" type="text" placeholder="Tölvupóstfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <input name="Address" class="translate" type="text" placeholder="Heimilisfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <input name="Food" class="translate" type="text" placeholder="Ofnæmisvaldar / Mataræði">
+            <input name="Music" class="translate" type="text" placeholder="Hvaða lag kemur þér á dansgólfið?" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+
+            <div class="btn-group" role="group">
+              <input id="rsvp-accept-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+              <label id="accept-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-accept-button"></label>
+
+              <input id="rsvp-decline-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+              <label id="decline-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-decline-button"></label>
+            </div>
+
+            <button id="rsvp-submit-button" type="submit" class="btn btn-outline-primary btn-outline-primary-send translate"></button>
+          </form>
+        </div>
+      </div>
     </div>
     <div id="schedule-section" class="ww-section bg-light">
       <h2 id="schedule" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
@@ -150,31 +185,6 @@
         </div>
       </div>
       <h2 id="countdown" class="h1 text-center ww-title pb-3" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
-    </div>
-    <div class="ww-section bg-light" id="rsvp-section">
-      <div class="container ww-rsvp-detail">
-        <h2 class="h1 text-center pb-3 ww-title rsvp-header" data-aos="zoom-in-down" data-aos-duration="1000">RSVP</h2>
-        <div class="form">
-          <form id="rsvp-form" class ="info" method="POST" action="https://script.google.com/macros/s/AKfycbx9Rdi2a8Di7q9MZxUghjig03NKVFwfThjPkAlwJwDwp8pVlxyHhUSu-A3GO2_CeZ2j/exec">
-            <input name="Name" class="translate" type="text" placeholder="Nafn" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Phone" class="translate" type="text" placeholder="Símanúmer" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Email" class="translate" type="text" placeholder="Tölvupóstfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Address" class="translate" type="text" placeholder="Heimilisfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Food" class="translate" type="text" placeholder="Ofnæmisvaldar / Mataræði">
-            <input name="Music" class="translate" type="text" placeholder="Hvaða lag kemur þér á dansgólfið?" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-
-            <div class="btn-group" role="group">
-              <input id="rsvp-accept-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-              <label id="accept-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-accept-button"></label>
-
-              <input id="rsvp-decline-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-              <label id="decline-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-decline-button"></label>
-            </div>
-
-            <button id="rsvp-submit-button" type="submit" class="btn btn-outline-primary btn-outline-primary-send translate"></button>
-          </form>
-        </div>
-      </div>
     </div>
     <div class="ww-section bg-light" id="details-section">
       <div class="container ww-extra-details">

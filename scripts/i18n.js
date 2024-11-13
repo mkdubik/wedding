@@ -32,14 +32,16 @@ const i18n = {
         "accept-button": "Já ég mæti",
         "decline-button": "Því miður, ég get ekki mætt",
         "rsvp-submit-button": "Senda svar",
-        "details-head": "Upplýsingar",
+        "details-head": "Gisting",
         "details-1": "Ef veður leyfir er hægt að tjalda á tjaldsvæði Eyvindartungu fyrir þá sem hafa áhuga á því",
         "details-2": "Einnig er hægt að bóka herbergi í gegnum bókunarsíður",
         "gifts-head": "Gjafir",
         "gifts-details-1": "Við þökkum fyrir áhugan á að gefa okkur brúðkaupsgjöf",
         "gifts-details-2": "Það sem væri hentugast fyrir okkur væri að fá gjöf í formi styrks",
         "gifts-details-3": "Leggið vinsamlegast á Kennitölu: 010190-2159 og bankanúmer 0306-26-135864",
-        "gallery-head": "Myndir"
+        "gallery-head": "Myndir",
+        "wedding-announcement-text-date": "26. júlí 2025",
+        "intro-text": "Elsku vinir og ættingjar,"
     },
 	"en": {
     	"schedule": "Schedule",
@@ -74,14 +76,16 @@ const i18n = {
         "accept-button": "See you there!",
         "decline-button": "I cannot attend",
         "rsvp-submit-button": "Submit",
-        "details-head": "Details",
+        "details-head": "Accommodation",
         "details-1": "If weather permits <todo>",
         "details-2": "ALSO its possible <todo>",
         "gifts-head": "Gifts",
         "gifts-details-1": "gifts-details-1 <todo>",
         "gifts-details-2": "gifts-details-2 <todo>",
         "gifts-details-3": "gifts-details-3 <todo>",
-        "gallery-head": "Gallery"
+        "gallery-head": "Gallery",
+        "wedding-announcement-text-date": "July 26th 2025",
+        "intro-text": "Dear friends!"
     },
 	"pl": {
     	"schedule": "Rozkład",
@@ -116,14 +120,16 @@ const i18n = {
         "accept-button": "Tak",
         "decline-button": "Niestety",
         "rsvp-submit-button": "Wyslac",
-        "details-head": "Dodatkowe informacje",
+        "details-head": "Nocleg",
         "details-1": "Jezeli pogoda <todo>",
         "details-2": "Wyszukiwarka <todo>",
         "gifts-head": "Prezenty",
         "gifts-details-1": "prezenty 1",
         "gifts-details-2": "prezenty 2",
         "gifts-details-3": "prezenty 3",
-        "gallery-head": "Zdjecia"
+        "gallery-head": "Zdjecia",
+        "wedding-announcement-text-date": "26.lipca 2025",
+        "intro-text": "z"
     },
 };
 
