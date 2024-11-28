@@ -7,6 +7,9 @@ body {
   font-family: "Marmelad-Regular", sans-serif;
 }
 
+.section {
+  margin: 2em 0;
+}
 
 .details-text {
   text-align: left;
@@ -82,13 +85,7 @@ body {
   width: 50%;
 }
 
-.ww-announcement-container {
-  max-width: 1500px;
-}
 
-.ww-rsvp-detail {
-  max-width: 1500px;
-}
 
 /*
 .ww-home-page .ww-wedding-announcement {
@@ -134,11 +131,6 @@ body {
 /*.ww-wedding-announcement{
 }*/
 
-.ww-nav-bar .nav-item {
-  font-size: 18px;
-  padding: 5px 0 5px 16px;
-  font-weight: 500;
-}
 
 /* Photo Gallery Style */
 .ww-photo-gallery .ww-category-filter a {
@@ -213,88 +205,8 @@ body {
   text-decoration: underline;
 }
 
-.btn-check:active + .btn-outline-primary-input, .btn-check:checked + .btn-outline-primary-input, .btn-outline-primary-input.active, .btn-outline-primary-input:active  {
-  color: #fff;
-  background-color: black;
-  border-color: black;
-  box-shadow: none;
-}
 
-.btn-outline-primary-input {
-  color: black;
-  background-color: white;
-  border-color: black;
-}
 
-.btn-outline-primary-input:hover {
-  color: black;
-  background-color: gray;
-  border-color: black;
-}
-
-.btn-outline-primary-send {
-  font-size: 15px;
-  padding: 8px;
-  margin: 25px auto 25px auto;
-  display: block;
-  width: 35%;
-  color: black;
-  background-color: white;
-  border-color: black;
-  box-shadow: none;
-}
-
-.btn-outline-primary-send:hover {
-  color: #fff;
-  background-color: #666;
-  border-color: black;
-  box-shadow: none;
-}
-
-.btn-outline-primary-send:active {
-  color: #fff;
-  background-color: black;
-  border-color: black;
-  box-shadow: none;
-}
-
-.btn-outline-primary-send:enabled:focus {
-  color: #fff;
-  background-color: black;
-  border-color: black;
-  outline: none;
-  box-shadow: none;
-}
-
-.btn-outline-primary-send:disabled {
-  color: #fff;
-  background-color: black;
-  border-color: black;
-  box-shadow: none;
-}
-
-.lang-button {
-  color: black;
-  border-style: none;
-  outline: none;
-  box-shadow: none;
-}
-
-.lang-button:hover, .lang-button:active:hover {
-  color: black;
-  border-style: none;
-  outline: none;
-  box-shadow: none;
-  background-color: #f8f9fa;
-}
-
-.lang-button:enabled:focus {
-  color: black;
-  text-decoration: underline;
-  border-style: none;
-  outline: none;
-  box-shadow: none;
-}
 
 /* Hide elements */
 

@@ -25,7 +25,9 @@
     <link href="css/libs/aos.css" rel="stylesheet">
     <link href="css/libs/ekko-lightbox.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
     <link href="css/welcome.css" rel="stylesheet">
+    <link href="css/intro.css" rel="stylesheet">
     <link href="css/schedule.css" rel="stylesheet">
     <noscript>
       <style type="text/css">
@@ -37,8 +39,8 @@
     </noscript>
   </head>
   <body class="bg-light">
-    <div class="ww-nav-bar sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="ww-nav-bar sticky-top bg-light">
+      <nav class="navbar navbar-expand-xl navbar-light">
         <div class="container">
           <h1 class="h2"><a class="pl-4 navbar-brand" href="#">Ingunn & Mikael 2025</a></h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ww-navbarNav" aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -74,48 +76,44 @@
         </div>
       </div>
     </div>
-    <div id="rsvp-section" class="ww-section bg-light">
-      <div class="container ww-rsvp-detail">
+    <div class="section">
+      <div class="container">
         <div class="row">
-            <div class="col d-flex flex-column justify-content-start ww-wedding-announcement-description">
-              <div>
-                <div id="intro-p-1" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
-                <div id="intro-p-2" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
-                <div id="intro-p-3" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
-                <div id="intro-p-4" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
-                <div id="intro-p-5" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
-                <div id="countdown" class="countdown h4 ww-wedding-announcement-description-group text-left ww-title pb-3"></div>
-              </div>
+            <div class="col-lg order-lg-first intro-text">
+              <div id="intro-p-1" class="intro-text-paragraph translate"></div>
+              <div id="intro-p-2" class="intro-text-paragraph translate"></div>
+              <div id="intro-p-3" class="intro-text-paragraph translate"></div>
+              <div id="intro-p-4" class="intro-text-paragraph translate"></div>
+              <div id="intro-p-5" class="intro-text-paragraph translate"></div>
+              <div id="countdown" class="countdown"></div>
             </div>
-            <div class="col d-flex form order-2 justify-content-center">
-              <div>
-                <div class="h1 text-center pb-3 ww-title rsvp-header">RSVP</div>
-                <form id="rsvp-form" class ="info" method="POST" action="https://script.google.com/macros/s/AKfycbx9Rdi2a8Di7q9MZxUghjig03NKVFwfThjPkAlwJwDwp8pVlxyHhUSu-A3GO2_CeZ2j/exec">
-                  <input name="Name" class="translate" type="text" placeholder="Nafn" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-                  <input name="Phone" class="translate" type="text" placeholder="Símanúmer" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-                  <input name="Email" class="translate" type="text" placeholder="Tölvupóstfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-                  <input name="Address" class="translate" type="text" placeholder="Heimilisfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-                  <input name="Food" class="translate" type="text" placeholder="Ofnæmisvaldar / Mataræði">
-                  <input name="Music" class="translate" type="text" placeholder="Hvaða lag kemur þér á dansgólfið?" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+            <div class="col-lg d-flex intro-rsvp-form">
+              <div class="intro-rsvp-header">RSVP</div>
+              <form id="intro-rsvp-form" class="intro-rsvp-form" method="POST" action="https://script.google.com/macros/s/AKfycbx9Rdi2a8Di7q9MZxUghjig03NKVFwfThjPkAlwJwDwp8pVlxyHhUSu-A3GO2_CeZ2j/exec">
+                <input name="Name" class="translate" type="text" placeholder="Nafn" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+                <input name="Phone" class="translate" type="text" placeholder="Símanúmer" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+                <input name="Email" class="translate" type="text" placeholder="Tölvupóstfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+                <input name="Address" class="translate" type="text" placeholder="Heimilisfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+                <input name="Food" class="translate" type="text" placeholder="Ofnæmisvaldar / Mataræði">
+                <input name="Music" class="translate" type="text" placeholder="Hvaða lag kemur þér á dansgólfið?" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
 
-                  <div class="text-center">
-                    <div class="btn-group rsvp-attendance" role="group">
-                      <input id="rsvp-accept-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-                      <label id="accept-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-accept-button"></label>
+                <div class="text-center">
+                  <div class="btn-group rsvp-attendance" role="group">
+                    <input id="rsvp-accept-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+                    <label id="accept-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-accept-button"></label>
 
-                      <input id="rsvp-decline-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-                      <label id="decline-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-decline-button"></label>
-                    </div>
-
-                    <button id="rsvp-submit-button" type="submit" class="btn btn-outline-primary btn-outline-primary-send translate"></button>
+                    <input id="rsvp-decline-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+                    <label id="decline-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-decline-button"></label>
                   </div>
-                </form>
-              </div>
+
+                  <button id="rsvp-submit-button" type="submit" class="btn btn-outline-primary btn-outline-primary-send translate"></button>
+                </div>
+              </form>
             </div>
         </div>
       </div>
     </div>
-    <div id="schedule-section" class="ww-section bg-light">
+    <div class="section">
       <h2 id="schedule" class="h1 text-center pb-3 ww-title translate"></h2>
       <div class="container schedule-rows">
         <div class="row">
@@ -213,6 +211,7 @@
               <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://www.austurey.is/">Austurey smáhýsi og bústaður</a></li>
               <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://www.airbnb.com/slink/1pW80BHL">The Black Icelandic House</a></li>
               <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://www.middalskot.is/is">Miðdalskot</a></li>
+              <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://happycampers.is/availability/?pickup-date=2025-07-25&pickup-time=08%3A00&return-date=2025-07-27&return-time=16%3A00&selected_class_id=">Happy Campers</a></li>
             </ul>
           </div>
           <div class="col">

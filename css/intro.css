@@ -1,29 +1,100 @@
-
-
-
-/*
-.ww-wedding-announcement-text {
+.intro-text {
   text-align: center;
-  margin-top: 100px;
+  padding: 0 10%;
 }
 
-.wedding-announcement-text-couple {
-  font-family: "Great Vibes", cursive;
-  font-size: 4vw;
+.intro-text-paragraph {
+  margin: 1em 0;
 }
 
-.wedding-announcement-text-location, .wedding-announcement-text-date {
-  font-family: "Marmelad-Regular";
-  font-size: 2vw;
+#intro-p-1 {
+  margin: 0 0;
 }
 
-.ww-wedding-announcement-description {
-  text-align: left;
-  margin-bottom: 150px;
-  margin-top: 50px;
+#intro-p-5 {
+  margin: 0 0;
 }
 
-.ww-wedding-announcement-description-group {
-  padding: 15px 0px;
+.countdown {
+  margin-top: 2em;
 }
-*/
+
+.intro-rsvp-form {
+  margin: 5em 0;
+}
+
+.intro-rsvp-header {
+  text-align: center;
+}
+
+
+input {
+  font-size: 15px;
+  color: #666;
+  padding: 6px;
+  margin: 25px auto 25px auto;
+  display: block;
+  width: 60%;
+  min-width: 350px;
+  max-width: 500px;
+}
+
+.btn-check:active + .btn-outline-primary-input, .btn-check:checked + .btn-outline-primary-input, .btn-outline-primary-input.active, .btn-outline-primary-input:active {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  box-shadow: none;
+}
+
+.btn-outline-primary-input {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.btn-outline-primary-input:hover {
+  color: black;
+  background-color: gray;
+  border-color: black;
+}
+
+.btn-outline-primary-send {
+  font-size: 15px;
+  padding: 8px;
+  margin: 25px auto 25px auto;
+  display: block;
+  width: 35%;
+  color: black;
+  background-color: white;
+  border-color: black;
+  box-shadow: none;
+}
+
+.btn-outline-primary-send:hover {
+  color: #fff;
+  background-color: #666;
+  border-color: black;
+  box-shadow: none;
+}
+
+.btn-outline-primary-send:active {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  box-shadow: none;
+}
+
+.btn-outline-primary-send:enabled:focus {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-outline-primary-send:disabled {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  box-shadow: none;
+}
