@@ -1,0 +1,36 @@
+.details-section {
+    margin: 10em 0;
+}
+
+.details-image {
+    margin: 2em 0;
+    max-width: 100%;
+}
+
+.details-header {
+  text-align: center;
+}
+
+.details-text-p {
+  padding: 0px 0px 15px 0px;
+}
+
+
+.details-links-list-element-href:link, .details-links-list-element-href:visited, .details-links-list-element-href:hover, .details-links-list-element-href:active {
+  color: black;
+  text-decoration: underline;
+}
+
+.details-text {
+  text-align: left;
+  margin-right: 100px;
+}
+
+.details-links {
+  text-align: center;
+}
+
+.details-links-list-element {
+  padding: 0px 0px 15px 0px;
+}
+

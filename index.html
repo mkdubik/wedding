@@ -29,6 +29,7 @@
     <link href="css/welcome.css" rel="stylesheet">
     <link href="css/intro.css" rel="stylesheet">
     <link href="css/schedule.css" rel="stylesheet">
+    <link href="css/details.css" rel="stylesheet">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -87,7 +88,7 @@
               <div id="intro-p-5" class="intro-text-paragraph translate"></div>
               <div id="countdown" class="countdown"></div>
             </div>
-            <div class="col-lg d-flex intro-rsvp-form">
+            <div class="col-lg intro-rsvp-form">
               <div class="intro-rsvp-header">RSVP</div>
               <form id="intro-rsvp-form" class="intro-rsvp-form" method="POST" action="https://script.google.com/macros/s/AKfycbx9Rdi2a8Di7q9MZxUghjig03NKVFwfThjPkAlwJwDwp8pVlxyHhUSu-A3GO2_CeZ2j/exec">
                 <input name="Name" class="translate" type="text" placeholder="Nafn" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
@@ -195,15 +196,15 @@
         </div>
       </div>
     </div>
-    <div id="details-section" class="ww-section bg-light" >
-      <div id="details-head" class="h1 details-head ww-title translate"></div>
-      <div class="container ww-extra-details">
+    <div class="section details-section">
+      <div id="details-header" class="details-header translate"></div>
+      <div class="container">
         <div class="row">
-          <div class="col d-flex flex-column justify-content-start details-text">
-            <div id="details-1" class="details-text-p h5 translate"></div>
-            <div id="details-2" class="details-text-p h5 translate"></div>
-            <div id="details-3" class="details-text-p h5 translate"></div>
-            <div id="details-links" class="details-text-p h5 translate"></div>
+          <div class="col-lg order-lg-first">
+            <div id="details-1" class="details-text-p translate"></div>
+            <div id="details-2" class="details-text-p translate"></div>
+            <div id="details-3" class="details-text-p translate"></div>
+            <div id="details-links" class="details-text-p translate"></div>
             <ul class="details-links-list h5">
               <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://heradsskolinn.is/is/">Héraðsskólinn</a></li>
               <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://bjorkguesthouse.is/">Björk</a></li>
@@ -214,20 +215,12 @@
               <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://happycampers.is/availability/?pickup-date=2025-07-25&pickup-time=08%3A00&return-date=2025-07-27&return-time=16%3A00&selected_class_id=">Happy Campers</a></li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-lg order-first">
             <img class="details-image" src="images/eyvindartunga.jpg">
           </div>
         </div>
       </div>
     </div>
-    </div>
-    <div id="gifts-section" class="ww-section bg-light">
-      <div class="container ww-gifts-details">
-        <h2 id="gifts-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
-        <div id="gifts-details-1" class="description h3 text-center translate font"></div>
-        <div id="gifts-details-2" class="description h3 text-center translate font"></div>
-        <div id="gifts-details-3" class="description h3 text-center translate font"></div>
-      </div>
     </div>
     <div id="gallery-section" class="ww-section bg-light">
       <div class="ww-photo-gallery">

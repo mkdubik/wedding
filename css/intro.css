@@ -15,6 +15,14 @@
   margin: 0 0;
 }
 
+@media (min-width: 992px) {
+  .intro-text {
+    margin: auto;
+    padding: 0 0;
+    text-align: left;
+  }
+}
+
 .countdown {
   margin-top: 2em;
 }
