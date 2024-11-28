@@ -7,41 +7,6 @@ body {
   font-family: "Marmelad-Regular", sans-serif;
 }
 
-/* Home Page Style */
-.ww-home-page {
-  padding: 1% 0%;
-}
-
-.couple-image {
-  min-width: 260px;
-  max-width: 760px;
-  padding-left: 40px;
-}
-
-.ww-wedding-announcement-text {
-  text-align: center;
-  margin-top: 100px;
-}
-
-.wedding-announcement-text-couple {
-  font-family: "Great Vibes", cursive;
-  font-size: 4vw;
-}
-
-.wedding-announcement-text-location, .wedding-announcement-text-date {
-  font-family: "Marmelad-Regular";
-  font-size: 2vw;
-}
-
-.ww-wedding-announcement-description {
-  text-align: left;
-  margin-bottom: 150px;
-  margin-top: 50px;
-}
-
-.ww-wedding-announcement-description-group {
-  padding: 15px 0px;
-}
 
 .details-text {
   text-align: left;
@@ -63,6 +28,7 @@ body {
   margin-left: 100px;
 }
 
+/*
 @media (max-width: 962px) {
   .ww-wedding-announcement-text {
     order: 2;
@@ -102,7 +68,7 @@ body {
     padding: 0px auto;
   }
 }
-
+*/
 .countdown {
   margin-top: 40px;
 }
