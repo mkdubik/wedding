@@ -46,7 +46,6 @@
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#rsvp-section">RSVP</a></li>
               <li class="nav-item"><a id="schedule" class="nav-link smooth-scroll translate" href="#schedule-section"></a></li>
               <li class="nav-item"><a id="details-head" class="nav-link smooth-scroll translate" href="#details-section"></a></li>
-             <!-- <li class="nav-item"><a id="gifts-head" class="nav-link smooth-scroll translate" href="#gifts-section"></a></li> -->
               <li class="nav-item"><a id="gallery-head" class="nav-link smooth-scroll translate" href="#gallery-section"></a></li>
             </ul>
           </div>
@@ -60,14 +59,14 @@
         </div>
       </nav>
     </div>
-    <div class="ww-home-page bg-light" id="home-section">
+    <div id="home-section" class="ww-home-page bg-light">
       <div class="ww-wedding-announcement">
         <div class="container ww-announcement-container">
           <div class="row">
             <div class="col ww-wedding-announcement-text">
               <p class="wedding-announcement-text-couple">Ingunn & Mikael</p>
-              <p id="wedding-announcement-text-date" class="wedding-announcement-text-date translate">2026</p>
-              <p class="wedding-announcement-text-location">Laugarvatn</p>
+              <p id="wedding-announcement-text-date" class="wedding-announcement-text-date translate"></p>
+              <p class="wedding-announcement-text-location">Laugarvatni</p>
             </div>
             <div class="col d-flex">
               <img class="couple-image" src="images/home-img.jpg">
@@ -76,35 +75,49 @@
         </div>
       </div>
     </div>
-    <div class="ww-section bg-light" id="rsvp-section">
+    <div id="rsvp-section" class="ww-section bg-light">
       <div class="container ww-rsvp-detail">
-        <p id="intro-text" class="h5 text-left translate"></p>
-        <p id="intro-text-2" class="h5 text-left">Við hlökkum til að fagna deginum okkar með ykkur í sveitabrúðkaupi! Á þessari síðu munum við deila ýmsum hagnýtum upplýsingum, m.a. dagskrá dagsins og upplýsingar um mögulega gistingu á svæðinu.</p>
-        <p id="intro-text-2" class="h5 text-left">Við biðjum ykkur vinsamlegast um að fylla út RSVP-formið hér að neðan við fyrsta tækifæri til að auðvelda okkur alla skipulagningu.</p>
-        <div class="form">
-          <form id="rsvp-form" class ="info" method="POST" action="https://script.google.com/macros/s/AKfycbx9Rdi2a8Di7q9MZxUghjig03NKVFwfThjPkAlwJwDwp8pVlxyHhUSu-A3GO2_CeZ2j/exec">
-            <input name="Name" class="translate" type="text" placeholder="Nafn" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Phone" class="translate" type="text" placeholder="Símanúmer" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Email" class="translate" type="text" placeholder="Tölvupóstfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Address" class="translate" type="text" placeholder="Heimilisfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-            <input name="Food" class="translate" type="text" placeholder="Ofnæmisvaldar / Mataræði">
-            <input name="Music" class="translate" type="text" placeholder="Hvaða lag kemur þér á dansgólfið?" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
-
-            <div class="btn-group" role="group">
-              <input id="rsvp-accept-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-              <label id="accept-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-accept-button"></label>
-
-              <input id="rsvp-decline-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-              <label id="decline-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-decline-button"></label>
+        <div class="row">
+            <div class="col d-flex flex-column justify-content-start ww-wedding-announcement-description">
+              <div>
+                <div id="intro-p-1" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
+                <div id="intro-p-2" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
+                <div id="intro-p-3" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
+                <div id="intro-p-4" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
+                <div id="intro-p-5" class="h5 ww-wedding-announcement-description-group text-left translate"></div>
+                <div id="countdown" class="countdown h4 ww-wedding-announcement-description-group text-left ww-title pb-3"></div>
+              </div>
             </div>
+            <div class="col d-flex form order-2 justify-content-center">
+              <div>
+                <div class="h1 text-center pb-3 ww-title rsvp-header">RSVP</div>
+                <form id="rsvp-form" class ="info" method="POST" action="https://script.google.com/macros/s/AKfycbx9Rdi2a8Di7q9MZxUghjig03NKVFwfThjPkAlwJwDwp8pVlxyHhUSu-A3GO2_CeZ2j/exec">
+                  <input name="Name" class="translate" type="text" placeholder="Nafn" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+                  <input name="Phone" class="translate" type="text" placeholder="Símanúmer" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+                  <input name="Email" class="translate" type="text" placeholder="Tölvupóstfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+                  <input name="Address" class="translate" type="text" placeholder="Heimilisfang" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
+                  <input name="Food" class="translate" type="text" placeholder="Ofnæmisvaldar / Mataræði">
+                  <input name="Music" class="translate" type="text" placeholder="Hvaða lag kemur þér á dansgólfið?" required oninvalid="this.setCustomValidity('Vinsamlegast fylltu út þennan reit')" oninput="this.setCustomValidity('')">
 
-            <button id="rsvp-submit-button" type="submit" class="btn btn-outline-primary btn-outline-primary-send translate"></button>
-          </form>
+                  <div class="text-center">
+                    <div class="btn-group rsvp-attendance" role="group">
+                      <input id="rsvp-accept-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+                      <label id="accept-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-accept-button"></label>
+
+                      <input id="rsvp-decline-button" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+                      <label id="decline-button" class="btn btn-outline-primary btn-outline-primary-input translate" for="rsvp-decline-button"></label>
+                    </div>
+
+                    <button id="rsvp-submit-button" type="submit" class="btn btn-outline-primary btn-outline-primary-send translate"></button>
+                  </div>
+                </form>
+              </div>
+            </div>
         </div>
       </div>
     </div>
     <div id="schedule-section" class="ww-section bg-light">
-      <h2 id="schedule" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
+      <h2 id="schedule" class="h1 text-center pb-3 ww-title translate"></h2>
       <div class="container schedule-rows">
         <div class="row">
           <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
@@ -184,36 +197,41 @@
           </div>
         </div>
       </div>
-      <h2 id="countdown" class="h1 text-center ww-title pb-3" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
     </div>
-    <div class="ww-section bg-light" id="details-section">
+    <div id="details-section" class="ww-section bg-light" >
+      <div id="details-head" class="h1 details-head ww-title translate"></div>
       <div class="container ww-extra-details">
-        <h2 id="details-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
-        <div id="details-1" class="description h3 text-center translate font"></div>
-        <div id="details-2" class="description h3 text-center translate font"></div>
-
         <div class="row">
-          <div class="col" data-aos="zoom-in-down" data-aos-duration="1000">
-            <h2 class="h3 text-center pb-3 ww-title description2"><a href="https://www.airbnb.com/s/Laugarvatn/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-10-01&monthly_length=3&monthly_end_date=2025-01-01&price_filter_input_type=0&channel=EXPLORE&date_picker_type=calendar&checkin=2025-07-25&checkout=2025-07-27&source=structured_search_input_header&search_type=user_map_move&query=Laugarvatn&place_id=ChIJ56rG2K2a1kgRtdd6MlwZY60&search_mode=regular_search&price_filter_num_nights=2&ne_lat=64.39231881651838&ne_lng=-20.32871036418001&sw_lat=64.03207638839486&sw_lng=-20.98951318211843&zoom=10.402444307478438&zoom_level=10.402444307478438&search_by_map=true">Airbnb</a></h2>
-        </div>
-          <div class="col">
-            <h2 class="h3 text-center pb-3 ww-title"><a href="https://www.booking.com/searchresults.html?ss=Laugarvatn%2C+South+Iceland%2C+Iceland&efdco=1&label=gen173nr-1FCAEoggI46AdIM1gEaHCIAQGYATG4ARnIAQ_YAQHoAQH4AQKIAgGoAgO4Aubt_bYGwAIB0gIkMTEyMTU4ZjItNDdhYS00MWRmLWIyMDctZWIyZTk0ODE4YTg32AIF4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=index&dest_id=-2649636&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=2&search_selected=true&search_pageview_id=4be69e339a2b0060&ac_meta=GhA0YmU2OWUzMzlhMmIwMDYwIAAoATICZW46CkxhdWdhcnZhdG5AAEoAUAA%3D&checkin=2025-07-25&checkout=2025-07-27&group_adults=2&no_rooms=1&group_children=0">Booking</a></h2>
+          <div class="col d-flex flex-column justify-content-start details-text">
+            <div id="details-1" class="details-text-p h5 translate"></div>
+            <div id="details-2" class="details-text-p h5 translate"></div>
+            <div id="details-3" class="details-text-p h5 translate"></div>
+            <div id="details-links" class="details-text-p h5 translate"></div>
+            <ul class="details-links-list h5">
+              <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://heradsskolinn.is/is/">Héraðsskólinn</a></li>
+              <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://bjorkguesthouse.is/">Björk</a></li>
+              <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://www.hotellaugarvatn.is/">Hótel Laugarvatn</a></li>
+              <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://www.austurey.is/">Austurey smáhýsi og bústaður</a></li>
+              <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://www.airbnb.com/slink/1pW80BHL">The Black Icelandic House</a></li>
+              <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://www.middalskot.is/is">Miðdalskot</a></li>
+            </ul>
           </div>
           <div class="col">
-            <h2 class="h3 text-center pb-3 ww-title"><a href="https://www.google.com/search?client=ubuntu-sn&hs=1Vr&sca_upv=1&channel=fs&q=laugarvatn+accommodation">Google</a></h2>
+            <img class="details-image" src="images/eyvindartunga.jpg">
           </div>
         </div>
       </div>
     </div>
-    <div class="ww-section bg-light" id="gifts-section">
-      <div class="container ww-extra-details">
+    </div>
+    <div id="gifts-section" class="ww-section bg-light">
+      <div class="container ww-gifts-details">
         <h2 id="gifts-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000"></h2>
         <div id="gifts-details-1" class="description h3 text-center translate font"></div>
         <div id="gifts-details-2" class="description h3 text-center translate font"></div>
         <div id="gifts-details-3" class="description h3 text-center translate font"></div>
       </div>
     </div>
-    <div class="ww-section bg-light" id="gallery-section">
+    <div id="gallery-section" class="ww-section bg-light">
       <div class="ww-photo-gallery">
         <div class="container">
           <h2 id="gallery-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000">Gallery</h2>

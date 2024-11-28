@@ -9,7 +9,7 @@ body {
 
 /* Home Page Style */
 .ww-home-page {
-  padding: 5% 0%;
+  padding: 1% 0%;
 }
 
 .couple-image {
@@ -19,9 +19,8 @@ body {
 }
 
 .ww-wedding-announcement-text {
-  padding-top: 5%;
   text-align: center;
-  padding-right: 50px;
+  margin-top: 100px;
 }
 
 .wedding-announcement-text-couple {
@@ -34,11 +33,45 @@ body {
   font-size: 2vw;
 }
 
+.ww-wedding-announcement-description {
+  text-align: left;
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+
+.ww-wedding-announcement-description-group {
+  padding: 15px 0px;
+}
+
+.details-text {
+  text-align: left;
+  margin-right: 100px;
+}
+
+.details-links {
+  text-align: center;
+}
+
+.details-links-list-element {
+  padding: 0px 0px 15px 0px;
+}
+
+.details-image {
+  min-width: 260px;
+  max-width: 560px;
+  display: block;
+  margin-left: 100px;
+}
+
 @media (max-width: 962px) {
   .ww-wedding-announcement-text {
     order: 2;
     font-size: 5;
     padding-top: 10%;
+  }
+  .ww-wedding-announcement-description {
+    text-align: center;
+    margin-top: 0px;
   }
   .wedding-announcement-text-couple {
     font-size: 40px;
@@ -50,9 +83,44 @@ body {
   .couple-image {
     padding-left: 0px;
   }
+  .details-image {
+    max-width: 350px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .form input{
+    order: 2;
+  }
+  .details-text {
+    order: 2;
+    margin-right: 0;
+  }
+  .details-text-p {
+    margin-top: 40px;
+    text-align: center;
+    padding: 0px auto;
+  }
+}
+
+.countdown {
+  margin-top: 40px;
+}
+
+.schedule-item-picture {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .ww-announcement-container {
+  max-width: 1500px;
+}
+
+.ww-rsvp-detail {
   max-width: 1500px;
 }
 
@@ -103,7 +171,8 @@ body {
 .ww-nav-bar .nav-item {
   font-size: 18px;
   padding: 5px 0 5px 16px;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 /* Photo Gallery Style */
 .ww-photo-gallery .ww-category-filter a {
@@ -137,15 +206,7 @@ body {
 
 
 .ww-section {
-  padding: 10rem 0;
-}
-
-#schedule-section {
   padding: 5rem 0;
-}
-
-#countdown {
-  padding: 10rem 0;
 }
 
 .event-line-svg {
@@ -153,11 +214,37 @@ body {
   height: 100%;
 }
 
-.rsvp-attendance {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  counter-reset: button;
+.form input {
+  font-size: 15px;
+  color: #666;
+  padding: 6px;
+  margin: 25px auto 25px auto;
+  display: block;
+  width: 60%;
+  min-width: 350px;
+  max-width: 500px;
+}
+
+.ww-extra-details {
+  margin: 5% auto;
+}
+
+.details-text-p {
+  padding: 0px 0px 15px 0px;
+}
+
+.details-head {
+  display: block;
+  text-align: center;
+}
+
+.ww-extra-details {
+  max-width: 1500px;
+}
+
+.details-links-list-element-href:link, .details-links-list-element-href:visited, .details-links-list-element-href:hover, .details-links-list-element-href:active {
+  color: black;
+  text-decoration: underline;
 }
 
 .btn-check:active + .btn-outline-primary-input, .btn-check:checked + .btn-outline-primary-input, .btn-outline-primary-input.active, .btn-outline-primary-input:active  {
@@ -179,15 +266,12 @@ body {
   border-color: black;
 }
 
-.btn-group, .btn-outline-primary-send {
+.btn-outline-primary-send {
   font-size: 15px;
   padding: 8px;
-  margin: 20px auto 20px;
+  margin: 25px auto 25px auto;
   display: block;
-  width: 25%;
-}
-
-.btn-outline-primary-send {
+  width: 35%;
   color: black;
   background-color: white;
   border-color: black;
@@ -221,15 +305,6 @@ body {
   background-color: black;
   border-color: black;
   box-shadow: none;
-}
-
-.form input {
-  font-size: 15px;
-  color: #666;
-  padding: 6px;
-  margin: 25px auto 20px;
-  display: block;
-  width: 25%;
 }
 
 .lang-button {

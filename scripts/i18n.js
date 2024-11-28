@@ -33,15 +33,21 @@ const i18n = {
         "decline-button": "Því miður, ég get ekki mætt",
         "rsvp-submit-button": "Senda svar",
         "details-head": "Gisting",
-        "details-1": "Ef veður leyfir er hægt að tjalda á tjaldsvæði Eyvindartungu fyrir þá sem hafa áhuga á því",
-        "details-2": "Einnig er hægt að bóka herbergi í gegnum bókunarsíður",
+        "details-1": "Það er fullt af frábærum valkostum fyrir gistingu á svæðinu og örugglega hægt að finna eitthvað sem hentar á þessum hefðbundnu bókunarsíðum eins og <a target=\"_blank\" class=\"details-links-list-element-href\" href=\"https://www.airbnb.com/s/Laugarvatn--Iceland/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2025-07-25&checkout=2025-07-27&query=Laugarvatn&place_id=ChIJ56rG2K2a1kgRtdd6MlwZY60&location_bb=QoByWsGlzm1CgGpLwaYIRA%3D%3D&source=structured_search_input_header&search_type=autocomplete_click\">Airbnb</a> og <a target=\"_blank\" class=\"details-links-list-element-href\" href=\"https://www.booking.com/searchresults.html?ss=Laugarvatn%2C+South+Iceland%2C+Iceland&efdco=1&label=gen173bo-1DCAEoggI46AdIM1gDaHCIAQGYATG4ARnIAQ_YAQPoAQH4AQOIAgGYAgKoAgO4AqTmk7oGwAIB0gIkNmUzOWQ5MGMtMTljYy00YzcwLTkzOGEtYjcyOTQ5YzMwYTI22AIE4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=index&dest_id=-2649636&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=09989a925364003a&ac_meta=GhAwOTk4OWE5MjUzNjQwMDNhIAAoATICZW46BkxhdWdhckAASgBQAA%3D%3D&checkin=2025-07-25&checkout=2025-07-27&group_adults=2&no_rooms=1&group_children=0\">Booking.com</a>.",
+        "details-2": "Einnig má nefna að Björgunarsveitin Ingunn (nefnd eftir langalangaömmu Ingunnar!) mun líklega taka að sér að skutla gestum heim úr veislunni í u.þ.b. 20 mínútna radíus frá veislusalnum",
+        "details-3": "Ef þig langar í útileguævintýri, þá er tjaldstæði við Eyvindartungu, þar sem veislan verður haldin. Tjaldstæðið er frátekið fyrir gestina okkar þessa helgi og býður upp á aðgang að rafmagni, salernum og sturtum",
+        "details-links": "Hér má sjá nokkra möguleika sem við mælum sérstaklega með",
         "gifts-head": "Gjafir",
         "gifts-details-1": "Við þökkum fyrir áhugan á að gefa okkur brúðkaupsgjöf",
         "gifts-details-2": "Það sem væri hentugast fyrir okkur væri að fá gjöf í formi styrks",
         "gifts-details-3": "Leggið vinsamlegast á Kennitölu: 010190-2159 og bankanúmer 0306-26-135864",
         "gallery-head": "Myndir",
         "wedding-announcement-text-date": "26. júlí 2025",
-        "intro-text": "Elsku vinir og ættingjar,"
+        "intro-p-1": "Elsku vinir og ættingjar,",
+        "intro-p-2": "Við hlökkum til að fagna deginum okkar með ykkur í sveitabrúðkaupi! Á þessari síðu munum við deila ýmsum hagnýtum upplýsingum, m.a. dagskrá dagsins og upplýsingar um mögulega gistingu á svæðinu",
+        "intro-p-3": "Við biðjum ykkur vinsamlegast um að fylla út RSVP-formið við fyrsta tækifæri til að auðvelda okkur alla skipulagningu",
+        "intro-p-4": "Ykkar,",
+        "intro-p-5": "Ingunn og Mikael"
     },
 	"en": {
     	"schedule": "Schedule",
@@ -77,15 +83,21 @@ const i18n = {
         "decline-button": "I cannot attend",
         "rsvp-submit-button": "Submit",
         "details-head": "Accommodation",
-        "details-1": "If weather permits <todo>",
-        "details-2": "ALSO its possible <todo>",
+        "details-1": "There are plenty of great accommodation options in the area, and you're sure to find something that suits you on popular booking sites like <a target=\"_blank\" class=\"details-links-list-element-href\" href=\"https://www.airbnb.com/s/Laugarvatn--Iceland/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2025-07-25&checkout=2025-07-27&query=Laugarvatn&place_id=ChIJ56rG2K2a1kgRtdd6MlwZY60&location_bb=QoByWsGlzm1CgGpLwaYIRA%3D%3D&source=structured_search_input_header&search_type=autocomplete_click\">Airbnb</a> and <a target=\"_blank\" class=\"details-links-list-element-href\" href=\"https://www.booking.com/searchresults.html?ss=Laugarvatn%2C+South+Iceland%2C+Iceland&efdco=1&label=gen173bo-1DCAEoggI46AdIM1gDaHCIAQGYATG4ARnIAQ_YAQPoAQH4AQOIAgGYAgKoAgO4AqTmk7oGwAIB0gIkNmUzOWQ5MGMtMTljYy00YzcwLTkzOGEtYjcyOTQ5YzMwYTI22AIE4AIB&aid=304142&lang=en-us&sb=1&src_elem=sb&src=index&dest_id=-2649636&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=09989a925364003a&ac_meta=GhAwOTk4OWE5MjUzNjQwMDNhIAAoATICZW46BkxhdWdhckAASgBQAA%3D%3D&checkin=2025-07-25&checkout=2025-07-27&group_adults=2&no_rooms=1&group_children=0\">Booking.com</a>.",
+        "details-2": "It's also worth mentioning that the local  Search and Rescue team (named Ingunn after Ingunn’s great-great-grandma!) will likely offer rides home for guests within about a 20-minute radius of the venue.",
+        "details-3": "If you're up for a camping adventure, there's a campsite at Eyvindartunga, where the celebration will take place. The campsite is reserved exclusively for our guests this weekend and provides access to electricity, restrooms, and showers.",
+        "details-links": "Here are a few options we recommend!",
         "gifts-head": "Gifts",
         "gifts-details-1": "gifts-details-1 <todo>",
         "gifts-details-2": "gifts-details-2 <todo>",
         "gifts-details-3": "gifts-details-3 <todo>",
         "gallery-head": "Gallery",
         "wedding-announcement-text-date": "July 26th 2025",
-        "intro-text": "Dear friends!"
+        "intro-p-1": "Dear friends and family",
+        "intro-p-2": "We are beyond excited to celebrate our special day with all of you at our Icelandic country wedding! We’re especially looking forward to reconnecting with our foreign friends who we haven’t seen in far too long. On this site, you’ll find all the important details leading up to the big day, including the event schedule and information on accommodation options in the area",
+        "intro-p-3": "To help us with the planning, please take a moment to fill out the RSVP form below at your earliest convenience.",
+        "intro-p-4": "Yours,",
+        "intro-p-5": "Inga and Mikael"
     },
 	"pl": {
     	"schedule": "Rozkład",
@@ -129,7 +141,11 @@ const i18n = {
         "gifts-details-3": "prezenty 3",
         "gallery-head": "Zdjecia",
         "wedding-announcement-text-date": "26.lipca 2025",
-        "intro-text": "z"
+        "intro-p-1": "Drodzy przyjaciele i rodzina",
+        "intro-p-2": "Jesteśmy niezwykle podekscytowani, że będziemy mogli świętować nasz wyjątkowy dzień z Wami na naszym islandzkim weselu! Szczególnie cieszymy się na spotkanie z naszymi zagranicznymi przyjaciółmi, których nie widzieliśmy już od zbyt długiego czasu. Na tej stronie znajdziecie wszystkie ważne informacje przed wielkim dniem, w tym harmonogram wydarzenia oraz informacje o dostępnych opcjach zakwaterowania w okolicy",
+        "intro-p-3": "Aby pomóc nam w planowaniu, prosimy o wypełnienie formularza RSVP poniżej w najbliższym możliwym terminie.",
+        "intro-p-4": "Z miłością,",
+        "intro-p-5": "Inga i Michał"
     },
 };
 
