@@ -7,6 +7,14 @@
     max-width: 100%;
 }
 
+@media (min-width: 992px) {
+  .details-image {
+    margin-top: 0;
+    margin-left: 3em;
+    max-width: 100%;
+  }
+}
+
 .details-text-p {
   padding: 0px 0px 15px 0px;
   text-align: left;

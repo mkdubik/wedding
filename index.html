@@ -30,6 +30,7 @@
     <link href="css/intro.css" rel="stylesheet">
     <link href="css/schedule.css" rel="stylesheet">
     <link href="css/details.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -39,18 +40,19 @@
       </style>
     </noscript>
   </head>
-  <body class="bg-light">
+  <body id="body" class="bg-light">
     <div class="ww-nav-bar sticky-top bg-light">
       <nav class="navbar navbar-expand-xl navbar-light">
         <div class="container">
-          <h1 class="h2"><a class="pl-4 navbar-brand" href="#">Ingunn & Mikael 2025</a></h1>
+          <h1 class="h2"><a class="pl-4 navbar-brand" href="#body">Ingunn & Mikael 2025</a></h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ww-navbarNav" aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse text-uppercase" id="ww-navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link smooth-scroll" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#rsvp-section">RSVP</a></li>
               <li class="nav-item"><a id="schedule" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link smooth-scroll translate" href="#schedule-section"></a></li>
               <li class="nav-item"><a id="details-header" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link smooth-scroll translate" href="#details-section"></a></li>
-              <li class="nav-item"><a id="gallery-head" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link smooth-scroll translate" href="#gallery-section"></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#travel-section">Laugarvatn</a></li>
+              <li class="nav-item"><a id="gallery-header" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link smooth-scroll translate" href="#gallery-section"></a></li>
             </ul>
           </div>
           <div class="collapse navbar-collapse" id="ww-navbarNav">
@@ -120,6 +122,7 @@
         <div class="row">
           <div class="col">
             <div id="ceremony-events" class="schedule-element translate"></div>
+            <div class="schedule-element-info">15:00 - <a a class="schedule-element-info-link" target="_blank" href="https://maps.app.goo.gl/TEZg1AixPGaW2AqN6">Skálholtskirkja</a></div>
           </div>
           <div class="col-1">
             <svg class="event-line-svg">
@@ -142,6 +145,7 @@
           <div class="col">
             <div>
               <div id="predrinks-events" class="schedule-element translate"></div>
+              <div class="schedule-element-info">17:00 - <a a class="schedule-element-info-link" target="_blank" href="https://maps.app.goo.gl/xX3L9RXD9kTx3HRy5">Eyvindartunga</a></div>
             </div>
           </div>
         </div>
@@ -149,6 +153,7 @@
           <div class="col">
             <div>
               <div id="dinner-events" class="schedule-element translate"></div>
+              <div class="schedule-element-info">18:30 - <a a class="schedule-element-info-link" target="_blank" href="https://maps.app.goo.gl/xX3L9RXD9kTx3HRy5">Eyvindartunga</a></div>
             </div>
           </div>
           <div class="col-1">
@@ -172,6 +177,7 @@
           <div class="col">
             <div>
               <div id="cake-events" class="schedule-element translate"></div>
+              <div class="schedule-element-info">21:00 - <a a class="schedule-element-info-link" target="_blank" href="https://maps.app.goo.gl/xX3L9RXD9kTx3HRy5">Eyvindartunga</a></div>
             </div>
           </div>
         </div>
@@ -179,6 +185,7 @@
           <div class="col">
             <div>
               <div id="dance-events" class="schedule-element translate"></div>
+              <div class="schedule-element-info">22:30 - <a a class="schedule-element-info-link" target="_blank" href="https://maps.app.goo.gl/xX3L9RXD9kTx3HRy5">Eyvindartunga</a></div>
             </div>
           </div>
           <div class="col-1">
@@ -200,7 +207,7 @@
             <div id="details-2" class="details-text-p translate"></div>
             <div id="details-3" class="details-text-p translate"></div>
             <div id="details-links" class="details-text-p translate"></div>
-            <ul class="details-links-list h5">
+            <ul class="details-links-list">
               <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://heradsskolinn.is/is/">Héraðsskólinn</a></li>
               <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://bjorkguesthouse.is/">Björk</a></li>
               <li class="details-links-list-element"><a class="details-links-list-element-href" target="_blank" href="https://www.hotellaugarvatn.is/">Hótel Laugarvatn</a></li>
@@ -216,18 +223,75 @@
         </div>
       </div>
     </div>
-    <div id="gallery-section" class="ww-section bg-light">
-      <div class="ww-photo-gallery">
-        <div class="container">
-          <h2 id="gallery-head" class="h1 text-center pb-3 ww-title translate" data-aos="zoom-in-down" data-aos-duration="1000">Gallery</h2>
-          <div class="ww-gallery" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="0">
-            <div class="card-columns">
-              <div class="card"><a href="images/gallery/1.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery/1.jpg" alt="Gallery Pic 1"/></a></div>
-              <div class="card"><a href="images/gallery/2.jpg" data-toggle="lightbox" data-gallery="ww-gallery"><img class="img-fluid" src="images/gallery/2.jpg" alt="Gallery Pic 2"/></a></div>
-            </div>
+    <div id="travel-section" class="section">
+      <div id="travel-header" class="heading travel-header translate"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg order-lg-first">
+            <div id="travel-p1" class="details-text-p translate"></div>
+            <div id="travel-p2" class="details-text-p translate"></div>
+            <div id="travel-p3" class="details-text-p translate"></div>
+            <div id="travel-p4" class="details-text-p translate"></div>
+          </div>
+          <div class="col-lg order-first">
+            <img class="details-image" src="images/laugarvatn.jpg">
           </div>
         </div>
       </div>
+    </div>
+    <div id="gallery-section" class="section">
+      <div id="gallery-header" class="heading translate"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+              <div class="row">
+                  <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
+                  </a>
+              </div>
+              <div class="row">
+                  <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+                  </a>
+              </div>
+              <div class="row">
+                  <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+                  </a>
+              </div>
+              <div class="row">
+                  <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+                  </a>
+                  <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-element col-sm-4">
+                      <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+                  </a>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
     </div>
   </body>
   <script src="scripts/libs/jquery.min.js"></script>

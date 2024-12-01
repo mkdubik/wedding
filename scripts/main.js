@@ -18,12 +18,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-
-/*
-// Light Box
-$(document).on("click", '[data-toggle="lightbox"]', function(event) {
-  event.preventDefault();
-  $(this).ekkoLightbox();
-});
-*/
