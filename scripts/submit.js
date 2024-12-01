@@ -1,12 +1,12 @@
 window.addEventListener("load", function() {
-  const form = document.getElementById('rsvp-form');
+  const form = document.getElementById('intro-rsvp-form');
 
   form.addEventListener("submit", function(e) {
     e.preventDefault();
     const button = document.getElementById('rsvp-submit-button');
     button.disabled = true;
     button.innerText = i18n[currentLanguage]["submitting"]
-    const form = document.getElementById('rsvp-form');
+    const form = document.getElementById('intro-rsvp-form');
     const data = new FormData(form);
 
     data.delete('btnradio')

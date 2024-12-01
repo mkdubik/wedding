@@ -8,9 +8,24 @@ body {
 }
 
 .section {
-  margin: 2em 0;
+  margin: 125px 0;
 }
 
+html {
+  scroll-padding-top: 30em;
+}
+
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 10em;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
 
 /* Photo Gallery Style */
 .ww-photo-gallery .ww-category-filter a {

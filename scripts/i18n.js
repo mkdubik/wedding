@@ -47,7 +47,8 @@ const i18n = {
         "intro-p-2": "Við hlökkum til að fagna deginum okkar með ykkur í sveitabrúðkaupi! Á þessari síðu munum við deila ýmsum hagnýtum upplýsingum, m.a. dagskrá dagsins og upplýsingar um mögulega gistingu á svæðinu",
         "intro-p-3": "Við biðjum ykkur vinsamlegast um að fylla út RSVP-formið við fyrsta tækifæri til að auðvelda okkur alla skipulagningu",
         "intro-p-4": "Ykkar,",
-        "intro-p-5": "Ingunn og Mikael"
+        "intro-p-5": "Ingunn og Mikael",
+        "extraCountDownTimer": "í stóra daginn"
     },
 	"en": {
     	"schedule": "Schedule",
@@ -97,7 +98,8 @@ const i18n = {
         "intro-p-2": "We are beyond excited to celebrate our special day with all of you at our Icelandic country wedding! We’re especially looking forward to reconnecting with our foreign friends who we haven’t seen in far too long. On this site, you’ll find all the important details leading up to the big day, including the event schedule and information on accommodation options in the area",
         "intro-p-3": "To help us with the planning, please take a moment to fill out the RSVP form below at your earliest convenience.",
         "intro-p-4": "Yours,",
-        "intro-p-5": "Inga and Mikael"
+        "intro-p-5": "Inga and Mikael",
+        "extraCountDownTimer": "until the big day"
     },
 	"pl": {
     	"schedule": "Rozkład",
@@ -145,7 +147,8 @@ const i18n = {
         "intro-p-2": "Jesteśmy niezwykle podekscytowani, że będziemy mogli świętować nasz wyjątkowy dzień z Wami na naszym islandzkim weselu! Szczególnie cieszymy się na spotkanie z naszymi zagranicznymi przyjaciółmi, których nie widzieliśmy już od zbyt długiego czasu. Na tej stronie znajdziecie wszystkie ważne informacje przed wielkim dniem, w tym harmonogram wydarzenia oraz informacje o dostępnych opcjach zakwaterowania w okolicy",
         "intro-p-3": "Aby pomóc nam w planowaniu, prosimy o wypełnienie formularza RSVP poniżej w najbliższym możliwym terminie.",
         "intro-p-4": "Z miłością,",
-        "intro-p-5": "Inga i Michał"
+        "intro-p-5": "Inga i Michał",
+        "extraCountDownTimer": "do duzego dnia"
     },
 };
 

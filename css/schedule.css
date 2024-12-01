@@ -8,11 +8,11 @@
 }
 
 .schedule-vertical-separator {
-  margin-right: auto;
-  display: block;
+    margin-right: auto;
+    display: block;
 }
 
 .event-line-svg {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }

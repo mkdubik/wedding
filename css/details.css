@@ -7,14 +7,14 @@
     max-width: 100%;
 }
 
-.details-header {
-  text-align: center;
-}
-
 .details-text-p {
   padding: 0px 0px 15px 0px;
+  text-align: left;
 }
 
+.details-links-list {
+    margin-top: 40px;
+}
 
 .details-links-list-element-href:link, .details-links-list-element-href:visited, .details-links-list-element-href:hover, .details-links-list-element-href:active {
   color: black;
@@ -23,11 +23,6 @@
 
 .details-text {
   text-align: left;
-  margin-right: 100px;
-}
-
-.details-links {
-  text-align: center;
 }
 
 .details-links-list-element {
