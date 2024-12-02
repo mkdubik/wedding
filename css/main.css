@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Marmelad-Regular";
-  src: url('fonts/Marmelad-Regular.ttf') format('truetype');
+  src: url('../fonts/Marmelad-Regular.ttf') format('truetype');
 }
 
 body {
@@ -26,33 +26,3 @@ html {
   font-size: 30px;
   margin-bottom: 30px;
 }
-
-/* Photo Gallery Style */
-.ww-photo-gallery .ww-category-filter a {
-  display: inline-block;
-  margin: 0 10px 6px 0;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 3px;
-}
-
-.ww-photo-gallery .ww1-gallery {
-  min-height: 500px;
-}
-
-.ww-photo-gallery .card-columns .card {
-  border: none;
-  margin-bottom: 15px;
-  border-radius: none;
-}
-
-@media (max-width: 992px) {
-  .ww-photo-gallery .card-columns {
-    -moz-column-count: 2;
-         column-count: 2; } }
-
-@media (max-width: 576px) {
-  .ww-photo-gallery .card-columns {
-    -moz-column-count: 1;
-         column-count: 1; } }

@@ -28,7 +28,6 @@
   text-align: center;
 }
 
-
 @media (min-width: 992px) {
   .intro-text {
     margin: auto;
@@ -37,10 +36,9 @@
   }
 }
 
-
 input {
   font-size: 15px;
-  color: #666;
+  color: black;
   padding: 6px;
   margin: 25px auto 25px auto;
   display: block;

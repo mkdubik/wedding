@@ -19,8 +19,8 @@ const i18n = {
         "countdown-finished": "Brúðkaupið er búið :)",
         "submitting": "Er að senda svar..",
         "missing-form-data": "Vantar upplýsingar fyrir svar. Fylltu inn Nafn, Símanúmer, Tölvupóstfang, Heimilisfang og lagið sem kemur þér á dansgólfið. Reyndu svo aftur.",
-        "name-conflict": "Nafn er nú þegar skráð. Hafðu samband við okkur ef það þarf að breyta skráninguni eða ef þú kannast ekki við skráninguna",
-        "unknown-error": "Eitthvað hefur farið úrskeiðis. Hafðu samband við okkur svo að hægt sé að skrá þig",
+        "name-conflict": "Nafn er nú þegar skráð. Hafðu samband við okkur ef það þarf að breyta skráningunni eða ef þú kannast ekki við skráninguna",
+        "unknown-error": "Eitthvað hefur farið úrskeiðis. Hafðu samband við okkur svo að hægt sé að skrá svarið þitt",
         "accepted": "Svar skráð. Við hlökkum til að sjá þig á deginum okkar",
         "rejected": "Svar skráð. Okkur þykir það leitt að þú kemst ekki",
         "Name": "Nafn",
@@ -77,8 +77,8 @@ const i18n = {
         "missing-form-data": "Missing information. Please fill in Name, Phone number, E-mail, Address and the song that gets you to the dance floor and then retry.",
         "name-conflict": "Name already registered. Please get in touch with us if you need to change the registration",
         "unknown-error": "Something went wrong. Please get in touch with us to register your answer",
-        "accepted": "Answer submitted. <TODO>",
-        "rejected": "Answer submitted. <TODO BAD>",
+        "accepted": "Answer submitted. We are looking forward to seeing you!",
+        "rejected": "Answer submitted. Too bad you can't make it. We hope to see you soon",
         "Name": "Name",
         "Phone": "Phone number",
         "Email": "E-mail",
@@ -227,12 +227,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     translatePage(currentLanguage)
-
-    /*
-     *  Uncomment this until we get closer to the wedding
-        document.getElementById("gifts-section").remove()
-        document.getElementById("gifts-head").parentNode.remove()
-    */
 });
 
 function translatePage(language) {
