@@ -101,7 +101,7 @@ const i18n = {
         "gifts-details-1": "gifts-details-1 <todo>",
         "gifts-details-2": "gifts-details-2 <todo>",
         "gifts-details-3": "gifts-details-3 <todo>",
-        "gallery-header": "Gallery",
+        "gallery-header": "Photos",
         "welcome-section-date": "July 26th, 2025",
         "intro-p-1": "Dear friends and family",
         "intro-p-2": "We are beyond excited to celebrate our special day with all of you at our Icelandic country wedding! We’re especially looking forward to reconnecting with our foreign friends who we haven’t seen in far too long. On this site, you’ll find all the important details leading up to the big day, including the event schedule and information on accommodation options in the area.",
