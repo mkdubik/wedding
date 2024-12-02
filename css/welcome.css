@@ -40,4 +40,32 @@
     .welcome-section-details {
         margin: auto;
     }
+
+    .welcome-section-details-container {
+        margin: auto 0 auto 0;
+    }
+
+    .welcome-section-couple {
+        font-size: 70px;
+    }
+
+    .welcome-section-date {
+        font-size: 40px;
+    }
+
+    .welcome-section-location {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1779px) {
+    .welcome-section-details-container {
+        margin: auto 0 auto 20%;
+    }
+}
+
+@media (min-width: 2313px) {
+    .welcome-section-details-container {
+        margin: auto 0 auto 35%;
+    }
 }
