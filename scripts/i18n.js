@@ -1,6 +1,7 @@
 const i18n = {
 	"is": {
-    	"schedule": "Dagskrá",
+        "welcome-section-location": "Laugarvatni",
+        "schedule": "Dagskrá",
         "ceremony": 'Athöfnin verður í <a href="https://www.google.com/maps?ll=64.125268,-20.524612&z=15&t=h&hl=en&gl=IS&mapclient=embed&cid=2354147562176909985" target="_blank">Skálholtskirkju</a>',
         "dinner": 'Við munum skála í <a href="https://maps.app.goo.gl/qfYUDDLa7vxXxydf7" target="_blank">Eyvindartungu</a>',
         "ceremony-events": "Athöfn",
@@ -56,6 +57,7 @@ const i18n = {
         "travel-p4": "Hlökkum til að eyða þessari einstöku helgi með ykkur öllum! 💛"
     },
 	"en": {
+        "welcome-section-location": "Laugarvatn",
     	"schedule": "Schedule",
         "ceremony": 'The ceremony will be in <a href="https://www.google.com/maps?ll=64.125268,-20.524612&z=15&t=h&hl=en&gl=IS&mapclient=embed&cid=2354147562176909985" target="_blank">Skálholtskirkja</a>',
         "dinner": 'The dinner will be in <a href="https://maps.app.goo.gl/qfYUDDLa7vxXxydf7" target="_blank">Eyvindartunga</a>',
@@ -112,6 +114,7 @@ const i18n = {
         "travel-p4": "We can’t wait to spend this special weekend with all of you! 💛"
     },
 	"pl": {
+        "welcome-section-location": "Laugarvatn",
     	"schedule": "Rozkład",
         "ceremony": 'Ceremonia bedzie w kosciele <a href="https://www.google.com/maps?ll=64.125268,-20.524612&z=15&t=h&hl=en&gl=IS&mapclient=embed&cid=2354147562176909985" target="_blank">Skálholtskirkja</a>',
         "dinner": 'Wesele bedzie w <a href="https://maps.app.goo.gl/qfYUDDLa7vxXxydf7" target="_blank">Eyvindartunga</a>',
