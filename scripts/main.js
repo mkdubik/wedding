@@ -10,3 +10,7 @@ document.querySelectorAll('.gallery-element').forEach((el) => el.addEventListene
 	const lightbox = new Lightbox(el, options);
 	lightbox.show();
 }));
+
+$(window).on('hashchange', function(e){
+    history.replaceState ("", document.title, e.originalEvent.oldURL);
+});
