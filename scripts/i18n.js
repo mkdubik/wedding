@@ -54,7 +54,9 @@ const i18n = {
         "travel-p1": "Ingunn á ættir að rekja til Laugarvatns og hefur eytt þar ófáum stundum í gegnum tíðina í sumarbústöðum fjölskyldunnar á svæðinu. Undanfarin ár hefur Mikael og svo Vigdís og Gunnar einnig átt góðar stundir þar, svo svæðið hefur orðið okkur kært.",
         "travel-p2": "Okkur langaði alltaf að gera eitthvað aðeins öðruvísi til að fagna brúðkaupi okkar. Þegar við sáum salinn í Eyvindartungu fannst okkur hann vera frábær fyrir sveitabrúðkaup í fallegu umhverfi, hæfilega langt frá höfuðborginni. Svo sakar ekki að Laugarvatn er í miðjum Gullna hringnum – sem hentar einstaklega vel fyrir erlenda vini okkar sem við vonumst til að fá í heimsókn.",
         "travel-p3": "Við vonumst til að þið sjáið ykkur fært að gera helgi úr þessu, njótið dvalar á svæðinu og fagnið með okkur í góðum gír. Á föstudagskvöldinu verður grillið heitt í Eyvindartungu, og öll velkomin að byrja fjörið með okkur (og jafnvel aðstoða aðeins við að stilla upp í salnum 😄). Einnig er planið að skella sér saman í Fontana á einhverjum tímapunkti, svo takið sundfötin með!",
-        "travel-p4": "Hlökkum til að eyða þessari einstöku helgi með ykkur öllum! 💛"
+        "travel-p4": "Hlökkum til að eyða þessari einstöku helgi með ykkur öllum! 💛",
+        "austurey": "Austurey smáhýsi og bústaður",
+        "bjork": "Björk Gistiheimili"
     },
 	"en": {
         "welcome-section-location": "Laugarvatn",
@@ -100,7 +102,7 @@ const i18n = {
         "gifts-details-2": "gifts-details-2 <todo>",
         "gifts-details-3": "gifts-details-3 <todo>",
         "gallery-header": "Gallery",
-        "welcome-section-date": "July 26th 2025",
+        "welcome-section-date": "July 26th, 2025",
         "intro-p-1": "Dear friends and family",
         "intro-p-2": "We are beyond excited to celebrate our special day with all of you at our Icelandic country wedding! We’re especially looking forward to reconnecting with our foreign friends who we haven’t seen in far too long. On this site, you’ll find all the important details leading up to the big day, including the event schedule and information on accommodation options in the area.",
         "intro-p-3": "To help us with the planning, please take a moment to fill out the RSVP form below at your earliest convenience.",
@@ -111,7 +113,9 @@ const i18n = {
         "travel-p1": "Ingunn’s roots trace back to Laugarvatn, where she has spent countless hours over the years at the family summer cabins in the area. In recent years, Mikael, Vigdís, and Gunnar have also shared many great moments there, so the area has become very dear to us.",
         "travel-p2": "We always wanted to do something a little different to celebrate our wedding, and when we saw the venue at Eyvindartunga, we knew it was the perfect spot for a countryside wedding in a beautiful setting, just far enough from the capital. Plus, Laugarvatn is right in the heart of the Golden Circle, one of the main tourist attractions in Iceland. This is especially convenient for our international friends who we hope will make the trip.",
         "travel-p3": "We’re hoping you’ll be able to make a weekend out of it, enjoy staying in the area, and join us in the celebration with good vibes. On Friday night, the BBQ will be hot at Eyvindartunga, and everyone is welcome to kick off the festivities with us (and maybe help set up the hall a bit 😄). We’re also planning a trip to Fontana Spa at some point, so don’t forget your swimwear!",
-        "travel-p4": "We can’t wait to spend this special weekend with all of you! 💛"
+        "travel-p4": "We can’t wait to spend this special weekend with all of you! 💛",
+        "austurey": "Austurey Cottages & Lakefront villa",
+        "bjork": "Björk Guesthouse"
     },
 	"pl": {
         "welcome-section-location": "Laugarvatn",
@@ -166,7 +170,9 @@ const i18n = {
         "travel-p1": "Af hverju Laugarvatn?",
         "travel-p2": "Af hverju Laugarvatn?",
         "travel-p3": "Af hverju Laugarvatn?",
-        "travel-p4": "Af hverju Laugarvatn?"
+        "travel-p4": "Af hverju Laugarvatn?",
+        "austurey": "Austurey Cottages & Lakefront Villa",
+        "bjork": "Björk Guesthouse"
     },
 };
 
