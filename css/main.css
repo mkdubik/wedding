@@ -12,12 +12,13 @@ body {
 }
 
 html {
-  scroll-padding-top: 30em;
+  scroll-padding-top: 75px;
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 992px) {
   html {
-    scroll-padding-top: 10em;
+    scroll-padding-top: 75px;
   }
 }
 

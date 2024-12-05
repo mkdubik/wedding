@@ -27,3 +27,11 @@
   color: black;
   text-decoration: underline;
 }
+
+.schedule-p-container {
+  margin-bottom: 5em;
+}
+
+.schedule-p {
+  margin: 1em 0;
+}

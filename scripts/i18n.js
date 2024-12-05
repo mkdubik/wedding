@@ -53,10 +53,11 @@ const i18n = {
         "travel-header": "Af hverju Laugarvatn?",
         "travel-p1": "Ingunn á ættir að rekja til Laugarvatns og hefur eytt þar ófáum stundum í gegnum tíðina í sumarbústöðum fjölskyldunnar á svæðinu. Undanfarin ár hefur Mikael og svo Vigdís og Gunnar einnig átt góðar stundir þar, svo svæðið hefur orðið okkur kært.",
         "travel-p2": "Okkur langaði alltaf að gera eitthvað aðeins öðruvísi til að fagna brúðkaupi okkar. Þegar við sáum salinn í Eyvindartungu fannst okkur hann vera frábær fyrir sveitabrúðkaup í fallegu umhverfi, hæfilega langt frá höfuðborginni. Svo sakar ekki að Laugarvatn er í miðjum Gullna hringnum – sem hentar einstaklega vel fyrir erlenda vini okkar sem við vonumst til að fá í heimsókn.",
-        "travel-p3": "Við vonumst til að þið sjáið ykkur fært að gera helgi úr þessu, njótið dvalar á svæðinu og fagnið með okkur í góðum gír. Á föstudagskvöldinu verður grillið heitt í Eyvindartungu, og öll velkomin að byrja fjörið með okkur (og jafnvel aðstoða aðeins við að stilla upp í salnum 😄). Einnig er planið að skella sér saman í Fontana á einhverjum tímapunkti, svo takið sundfötin með!",
-        "travel-p4": "Hlökkum til að njóta þessarar einstöku helgar með ykkur öllum! 💛",
+        "schedule-p-1": "Við vonumst til að þið sjáið ykkur fært að gera helgi úr þessu, njótið dvalar á svæðinu og fagnið með okkur í góðum gír. Á föstudagskvöldinu verður grillið heitt í Eyvindartungu, og öll velkomin að byrja fjörið með okkur (og jafnvel aðstoða aðeins við að stilla upp í salnum 😄). Einnig er planið að skella sér saman í Fontana á einhverjum tímapunkti, svo takið sundfötin með!",
+        "schedule-p-2": "Pússið dansskónna og reddið pössun fyrir laugardaginn þar sem brúðkaupið verður barnlaust. Þó eru ungabörn og brjóstmylkingar velkomnir til að einfalda líf nýrra foreldra. Börn eru einnig velkomin á aðra viðburði helgarinnar.",
+        "schedule-p-3": "Hlökkum til að njóta þessarar einstöku helgar með ykkur öllum! 💛",
         "austurey": "Austurey smáhýsi og bústaður",
-        "bjork": "Björk Gistiheimili"
+        "bjork": "Björk Gistiheimili",
     },
 	"en": {
         "welcome-section-location": "Laugarvatn",
@@ -112,8 +113,9 @@ const i18n = {
         "travel-header": "Why Laugarvatn?",
         "travel-p1": "Ingunn’s roots trace back to Laugarvatn, where she has spent countless hours over the years at the family summer cabins in the area. In recent years, Mikael, Vigdís, and Gunnar have also shared many great moments there, so the area has become very dear to us.",
         "travel-p2": "We always wanted to do something a little different to celebrate our wedding. When we saw the venue at Eyvindartunga, we knew it was the perfect spot for a countryside wedding in a beautiful setting, just far enough from the capital. Plus, Laugarvatn is right in the heart of the Golden Circle, one of the main tourist attractions in Iceland. This is especially convenient for our international friends who we hope will make the trip.",
-        "travel-p3": "We’re hoping you’ll be able to make a weekend out of it, enjoy staying in the area, and join us in the celebration with good vibes. On Friday night, the BBQ will be hot at Eyvindartunga, and everyone is welcome to kick off the festivities with us (and maybe help set up the hall a bit 😄). We’re also planning a trip to Fontana Spa at some point, so don’t forget your swimwear!",
-        "travel-p4": "We can’t wait to spend this special weekend with all of you! 💛",
+        "schedule-p-1": "We’re hoping you’ll be able to make a weekend out of it, enjoy staying in the area, and join us in the celebration with good vibes. On Friday night, the BBQ will be hot at Eyvindartunga, and everyone is welcome to kick off the festivities with us (and maybe help set up the hall a bit 😄). We’re also planning a trip to Fontana Spa at some point, so don’t forget your swimwear!",
+        "schedule-p-2": "We kindly ask that children do not attend the wedding and the following reception, except for babies under one years old (to simplify the lives of new parents). However, children are welcome to anything else over the weekend.",
+        "schedule-p-3": "We can’t wait to spend this special weekend with all of you! 💛",
         "austurey": "Austurey Cottages & Lakefront villa",
         "bjork": "Björk Guesthouse"
     },

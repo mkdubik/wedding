@@ -23,13 +23,13 @@
     <link href="css/libs/bootstrap.min.css" rel="stylesheet">
     <link href="css/libs/font-awesome/css/all.min.css" rel="stylesheet">
     <link href="css/libs/ekko-lightbox.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/navbar.css" rel="stylesheet">
-    <link href="css/welcome.css" rel="stylesheet">
-    <link href="css/intro.css" rel="stylesheet">
-    <link href="css/schedule.css" rel="stylesheet">
-    <link href="css/details.css" rel="stylesheet">
-    <link href="css/gallery.css" rel="stylesheet">
+    <link href="css/main.css?1" rel="stylesheet">
+    <link href="css/navbar.css?1" rel="stylesheet">
+    <link href="css/welcome.css?1" rel="stylesheet">
+    <link href="css/intro.css?1" rel="stylesheet">
+    <link href="css/schedule.css?1" rel="stylesheet">
+    <link href="css/details.css?1" rel="stylesheet">
+    <link href="css/gallery.css?1" rel="stylesheet">
   </head>
   <body id="body" class="bg-light">
     <div class="ww-nav-bar sticky-top bg-light">
@@ -112,6 +112,13 @@
     <div id="schedule-section" class="section">
       <h2 id="schedule" class="heading translate"></h2>
       <div class="container schedule-rows">
+        <div class="row schedule-p-container">
+          <div class="col">
+            <div id="schedule-p-1" class="schedule-p translate"></div>
+            <div id="schedule-p-2" class="schedule-p translate"></div>
+            <div id="schedule-p-3" class="schedule-p translate"></div>
+          </div>
+        </div>
         <div class="row">
           <div class="col">
             <div id="ceremony-events" class="schedule-element translate"></div>
@@ -223,8 +230,6 @@
           <div class="col-lg order-lg-first">
             <div id="travel-p1" class="details-text-p translate"></div>
             <div id="travel-p2" class="details-text-p translate"></div>
-            <div id="travel-p3" class="details-text-p translate"></div>
-            <div id="travel-p4" class="details-text-p translate"></div>
           </div>
           <div class="col-lg order-first">
             <img class="details-image" src="images/laugarvatn.jpg">
@@ -292,7 +297,7 @@
   <script src="scripts/libs/aos.js"></script>
   <script src="scripts/libs/index.bundle.min.js"></script>
   <script src="scripts/main.js?1"></script>
-  <script src="scripts/i18n.js?1"></script>
+  <script src="scripts/i18n.js?2"></script>
   <script src="scripts/countdowntimer.js"></script>
   <script src="scripts/submit.js"></script>
 </html>
