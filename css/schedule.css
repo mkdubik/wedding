@@ -1,5 +1,4 @@
 .schedule-rows {
-    padding-top: 50px;
     max-width: 680px;
 }
 
@@ -34,4 +33,8 @@
 
 .schedule-p {
   margin: 1em 0;
+}
+
+#schedule {
+  margin-bottom: 10px;
 }
