@@ -23,13 +23,13 @@
     <link href="css/libs/bootstrap.min.css" rel="stylesheet">
     <link href="css/libs/font-awesome/css/all.min.css" rel="stylesheet">
     <link href="css/libs/ekko-lightbox.css" rel="stylesheet">
-    <link href="css/main.css?2" rel="stylesheet">
-    <link href="css/navbar.css?2" rel="stylesheet">
-    <link href="css/welcome.css?2" rel="stylesheet">
-    <link href="css/intro.css?2" rel="stylesheet">
-    <link href="css/schedule.css?2" rel="stylesheet">
-    <link href="css/details.css?2" rel="stylesheet">
-    <link href="css/gallery.css?2" rel="stylesheet">
+    <link href="css/main.css?3" rel="stylesheet">
+    <link href="css/navbar.css?3" rel="stylesheet">
+    <link href="css/welcome.css?3" rel="stylesheet">
+    <link href="css/intro.css?3" rel="stylesheet">
+    <link href="css/schedule.css?3" rel="stylesheet">
+    <link href="css/details.css?3" rel="stylesheet">
+    <link href="css/gallery.css?3" rel="stylesheet">
   </head>
   <body id="body" class="bg-light">
     <div class="ww-nav-bar sticky-top bg-light">
@@ -37,7 +37,7 @@
         <div class="container">
           <h1 class="h2"><a class="pl-4 navbar-brand" href="#body">Ingunn & Mikael 2025</a></h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ww-navbarNav" aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse text-uppercase" id="ww-navbarNav">
+          <div class="collapse navbar-collapse text-uppercase navbar-links" id="ww-navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="#rsvp-section">RSVP</a></li>
               <li class="nav-item"><a id="schedule" class="nav-link translate" href="#schedule-section"></a></li>
@@ -109,14 +109,19 @@
     </div>
     <div id="schedule-section" class="section">
       <h2 id="schedule" class="heading translate"></h2>
-      <div class="container schedule-rows">
+      <div class="container">
         <div class="row schedule-p-container">
-          <div class="col">
+          <div class="col-lg order-lg-first">
             <div id="schedule-p-1" class="schedule-p translate"></div>
             <div id="schedule-p-2" class="schedule-p translate"></div>
             <div id="schedule-p-3" class="schedule-p translate"></div>
           </div>
+          <div class="col-lg order-first">
+            <img class="details-image" src="images/fordrykkur.jpg">
+          </div>
         </div>
+      </div>
+      <div class="container schedule-rows">
         <div class="row">
           <div class="col">
             <div id="ceremony-events" class="schedule-element translate"></div>
@@ -294,8 +299,8 @@
   <script src="scripts/libs/bootstrap.bundle.min.js"></script>
   <script src="scripts/libs/aos.js"></script>
   <script src="scripts/libs/index.bundle.min.js"></script>
-  <script src="scripts/main.js?1"></script>
-  <script src="scripts/i18n.js?2"></script>
+  <script src="scripts/main.js?3"></script>
+  <script src="scripts/i18n.js?3"></script>
   <script src="scripts/countdowntimer.js"></script>
   <script src="scripts/submit.js"></script>
 </html>
