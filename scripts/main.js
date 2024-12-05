@@ -14,3 +14,11 @@ document.querySelectorAll('.gallery-element').forEach((el) => el.addEventListene
 $(window).on('hashchange', function(e){
     history.replaceState ("", document.title, e.originalEvent.oldURL);
 });
+
+$('#ww-navbarNav a,button').on('click', function(){
+	$('#ww-navbarNav').removeClass('show');
+});
+
+$('#navbar-title').on('click', function(){
+	$('#ww-navbarNav').removeClass('show');
+});
