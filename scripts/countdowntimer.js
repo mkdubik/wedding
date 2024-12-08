@@ -23,11 +23,9 @@ var x = setInterval(function() {
   var secondsText = seconds === 1 ? i18n[currentLanguage]["second"] : i18n[currentLanguage]["seconds"]
   var extraCountDownTimer = i18n[currentLanguage]["extraCountDownTimer"]
 
-  // Display the result in the element with id="demo"
   document.getElementById("countdown").innerHTML = days + " " + daysText + " "+ hours + " " + hoursText + " "
   + minutes + " " + minutesText + " " + seconds + " " + secondsText + " " + extraCountDownTimer;
 
-  // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = i18n[currentLanguage]["countdown-finished"];
