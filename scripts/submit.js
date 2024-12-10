@@ -3,6 +3,7 @@ window.addEventListener("load", function() {
 
   form.addEventListener("submit", function(e) {
     e.preventDefault();
+
     const button = document.getElementById('rsvp-submit-button');
     button.disabled = true;
     button.innerText = i18n[currentLanguage]["submitting"]
@@ -10,7 +11,16 @@ window.addEventListener("load", function() {
     const data = new FormData(form);
 
     data.delete('btnradio')
+
     const accept = document.getElementById('rsvp-accept-button').checked
+    const decline = document.getElementById('rsvp-decline-button').checked
+
+    if (accept === false && decline === false) {
+      button.innerText = i18n[currentLanguage]["missing-rsvp-status"]
+      button.disabled = false;
+      return
+    }
+
     data.append("Accept", accept)
 
     const action = form.action;

@@ -20,6 +20,7 @@
         "countdown-extra": "í stóra daginn!",
         "countdown-finished": "Brúðkaupið er búið :)",
         "submitting": "Er að senda svar..",
+        "missing-rsvp-status": "Við þurfum að fá að vita hvort þú kemst eða ekki. Veldu annaðhvort og reyndu aftur.",
         "missing-form-data": "Vantar upplýsingar fyrir svar. Fylltu inn Nafn, Símanúmer, Tölvupóstfang, Heimilisfang og lagið sem kemur þér á dansgólfið. Reyndu svo aftur.",
         "name-conflict": "Nafn er nú þegar skráð. Hafðu samband við okkur ef það þarf að breyta skráningunni eða ef þú kannast ekki við skráninguna",
         "unknown-error": "Eitthvað hefur farið úrskeiðis. Hafðu samband við okkur svo að hægt sé að skrá svarið þitt",
@@ -76,6 +77,7 @@
         "countdown-finished": "The wedding is over :)",
         "submitting": "Submitting..",
         "missing-form-data": "Missing information. Please fill in Name, Phone number, E-mail, Address and the song that gets you to the dance floor and then retry.",
+        "missing-rsvp-status": "Please let us know if you can make it or not by choosing Yes or No and try again",
         "name-conflict": "Name already registered. Please get in touch with us if you need to change the registration",
         "unknown-error": "Something went wrong. Please get in touch with us to register your answer",
         "accepted": "Answer submitted. We are looking forward to seeing you!",
@@ -131,6 +133,7 @@
         "countdown-finished": "Wesele się szkończyło :)",
         "submitting": "Wysyłam..",
         "missing-form-data": "Brak danych. Prosimy wpisać imię, numer telefonu, e-mail, adres i ulubioną piosenke.",
+        "missing-rsvp-status": "Prosimy dać nam znać jeżeli bedziesz z nami na weselu. Wybierz tak lub nie i spróbój ponownie.",
         "name-conflict": "Imię jest już zarejestrowane. Prosimy żeby skontaktować się z nami jeżeli potrzeba zmienić potwierdzenie.",
         "unknown-error": "Coś nie tak wyszło. Prosimy żeby skontaktować się z nami.",
         "accepted": "Przyjęte potwierdzenie. Cieszmy się że bedziesz z nami.",
@@ -243,5 +246,7 @@ function translatePage(language) {
 }
 
 function getTranslatedOnInvalidMessage() {
+
+
     return i18n[currentLanguage]["oninvalid"]
 }
