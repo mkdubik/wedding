@@ -21,10 +21,10 @@ var x = setInterval(function() {
   var hoursText = hours === 1 ? i18n[currentLanguage]["hour"] : i18n[currentLanguage]["hours"]
   var minutesText = minutes === 1 ? i18n[currentLanguage]["minute"] : i18n[currentLanguage]["minutes"]
   var secondsText = seconds === 1 ? i18n[currentLanguage]["second"] : i18n[currentLanguage]["seconds"]
-  var extraCountDownTimer = i18n[currentLanguage]["extraCountDownTimer"]
+  var countdownExtra = i18n[currentLanguage]["countdown-extra"]
 
   document.getElementById("countdown").innerHTML = days + " " + daysText + " "+ hours + " " + hoursText + " "
-  + minutes + " " + minutesText + " " + seconds + " " + secondsText + " " + extraCountDownTimer;
+  + minutes + " " + minutesText + " " + seconds + " " + secondsText + " " + countdownExtra;
 
   if (distance < 0) {
     clearInterval(x);

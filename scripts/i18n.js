@@ -72,7 +72,7 @@
         "seconds": "seconds",
         "second": "second",
         "oninvalid": "Please fill out this form",
-        "cotundown-extra": "until the big day!",
+        "countdown-extra": "until the big day!",
         "countdown-finished": "The wedding is over :)",
         "submitting": "Submitting..",
         "missing-form-data": "Missing information. Please fill in Name, Phone number, E-mail, Address and the song that gets you to the dance floor and then retry.",
